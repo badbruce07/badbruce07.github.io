@@ -10,6 +10,7 @@
 		<title> Going Through With Crops </title>
 		
 		<link rel="stylesheet" href="../css/new_harvest.css" type="text/css" />
+		<link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
 	</head>
 
 	<body>
@@ -132,7 +133,8 @@
             "area", 
             "status", 
             "exp_date", 
-            "farm" }. Also, the ordering is done by plant_date in descending order since there is a (-) before the term 'plant_date'.				  
+            "farm" 
+            }. Also, the ordering is done by plant_date in descending order since there is a (-) before the term 'plant_date'.				  
 				  	</li> <br />
 				  	<li>
 						In line 22, json_decode is used to decode a JSON string and then it becomes a PHP variable 
