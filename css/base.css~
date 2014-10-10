@@ -130,7 +130,7 @@ header {
   margin-bottom: 10px; }
 
 #title h2 {
-  color: #95e5ca;
+  color: #E5F2EE;
   font-size: 20px; }
 
 /* =Footer
@@ -171,6 +171,4 @@ header {
   #title h2 {
     font-size: 16px; } }
     
- 	ol{
-	list-style-type: circle;  
-  }
+

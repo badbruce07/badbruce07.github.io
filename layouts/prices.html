@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+	<head>
+	
+		<!-- title and meta -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta name="description" content="A neat and simple tabbed content area with CSS and jQuery" />
+		<title> Going Through With Prices </title>
+		
+		<link rel="stylesheet" href="../css/new_harvest.css" type="text/css" />
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			
+			<header>	
+				<div id="title" class="container">
+        			<h1> Navigating Through Prices Using HarvestAPI  </h1>
+    			</div>
+			</header>
+			
+			<div id="main">
+				<h1 id="intro"> Going Through Prices Endpoint </h1>
+				
+				<h3> You can check out the crops endpoint at: <br />
+						<a href="http://harvestdata.herokuapp.com/prices/"> HarvestAPI Prices </a>
+				</h3> <br /> <br />
+				
+				<h1 id="intro"> Accessing The Prices Data Through a PHP Snippet </h1>
+				<h3> Now you can access the data with any platform of your choice, but for me I will be using PHP especially since
+					  from the previous page I created a connection to HarvestAPI utilizing both PHP and cURL called CallHarvestAPI.php. 
+					  You can see a view of the snippet below: 
+				</h3>
+				
+				<textarea readonly="readonly" rows="40" cols="100">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="stylesheet" href="style.css"/>	
+	</head>
+	<body>
+	
+	<?php
+		include("CallHarvestAPI.php");
+
+		/*---------------------------------------------------------------------------------------*/
+		/*-------------------------------- Livestock Details ------------------------------------*/
+		/*---------------------------------------------------------------------------------------*/
+		
+		$commodity = $_GET['commodity'];
+
+		// call price resource to return string
+		$prices = CallAPI('GET', 'harvestdata.herokuapp.com/prices/',
+					array('search'=> $commodity, 'ordering'=>'price'));
+					
+		//convert JSON string to PHP variable (object)
+		$price_objects = json_decode($prices);
+			
+		$num_prices = $price_objects -> count;
+		$next_page_price_url = $price_objects -> next;
+			
+		//getting the actual prices from results
+		$prices_dem = $price_objects -> results;
+		
+	?>
+	
+		<form action="prices.php" method="get">
+			<fieldset>
+				<legend> Search By Commodity Name </legend>
+				Commodity: <input type="text" name = "commodity"/> <input type="submit"/>		
+			</fieldset>
+		</form>
+		<br />
+		<br />
+		<table>
+			<tr>
+				<td> Price </td>
+				<td> Commodity </td>	
+				<td> Parish </td>
+				<td> Batch Date </td>
+				<td> Published On </td>
+			</tr>
+			
+			<?php 
+			
+			foreach($prices_dem as $price)
+			{	
+				echo '<tr>
+					<td>'.$price -> price.'</td>
+					<td>'.$price -> commodity. '</td>
+					<td>'.$price -> parish. '</td>
+					<td>'.$price -> batch_date. '</td>
+					<td>'.$price -> published_on. '</td>
+				</tr>';
+			}
+			
+			/*---------------------------/////////////////////////////--------------------------------*/
+			/*------------------------------- End of Price Details -----------------------------------*/
+			/*--------------------------//////////////////////////////--------------------------------*/			
+			
+			?>
+		</table>
+	</body>
+</html>					
+				</textarea>
+				
+				<h3>
+					From the above snippet called <b id="term1"> Prices.php </b>, in line 9, we used an include function which 
+					calls back the <b id="term1"> CallHarvestAPI.php </b> snippet. On line 15 we created a variable name 
+					called <b id="term1"> $commodity </b> which defines <b id="term1">$_GET['commodity']</b>. The variable 
+					'commodity' is in fact a field in prices endpoint and is seen again in line 35 in our form. The aim is to 
+					search for a commodity name to display a list with the fields in the table.					
+				</h3>
+				
+				<ul id="test1">
+					<li> In lines 18-19 a variable called <b id="term1"> $prices </b> and it is equivalent to CallAPI function 
+						  that has 3 parameters. If you recall the CallAPI function that was in CallHarvestAPI.php the parameters 
+						  include:
+						  
+						<ul>
+							<li> $method = 'GET' </li>
+							<li> $url = 'harvestdata.herokuapp.com/prices/'</li>
+							<li> $data = array('search'=>$commodity, 'ordering'=>'price') </li>
+						</ul>
+						
+						NB. For the $data variable, you can search by 'commodity', 'crop_code', 'price_point', 'extension' and 'parish'.	
+						Livestock Endpoint consists of field names such as {
+						"price", 
+            		"public", 
+            		"price_point", 
+            		"parish", 
+            		"commodity", 
+            		"crop_code", 
+            		"units", 
+            		"variety", 
+            		"batch_date", 
+            		"published_on", 
+            		"extension"
+						}.
+						Also, the ordering is done by price in ascending order.	
+					</li> <br />
+					
+					<li>
+						In line 22, json_decode is used to decode a JSON string and then it becomes a PHP variable 
+						<b id="term1"> $price_objects </b>.				  	
+				  	</li>
+				  	
+				  	<li>
+						In line 24, <b id="term1"> $num_prices </b> keeps a count of the number of livestock.				  	
+				  	</li>
+				  	
+				  	<li>
+						In line 28, <b id="term1"> $prices_dem </b> gets the livestock from results.				  	
+				  	</li>
+				  	
+				  	<li>
+						In lines 32-36, a form was created and a navigation was done by Commodity. Of course the name must match 
+						'commodity', which is the value we are trying to get to print the rest of details of our choice. 
+						<br/>
+						Tables are created so that the results can be seen there and we have a foreach() loop to 
+						print the fields of our choice.<br />
+						Look at the table below: <br/>
+						<img src="../img/screenshot_prices.png" alt=""/>		<br /> <br />
+						
+						As shown above the foreach() loop in line 51 takes care of each row that has details regarding the livestock name 
+						(take a look at the URL locator and you will see 'commodity=Dasheen')		  	
+				  	</li>
+				</ul>
+				
+			</div>
+			
+			<footer>
+			
+				<table> 
+					<tr> 
+						<td> <a href="util_php.html"> Previous </a></td> 
+    					<td> <a href="../index.html"> Back to Main </a> </td>
+    				</tr>
+    			</table>
+    		
+			</footer> <!-- /footer -->
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+	<head>
+	
+		<!-- title and meta -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta name="description" content="A neat and simple tabbed content area with CSS and jQuery" />
+		<title> Connect to HarvestAPI </title>
+		
+		<link rel="stylesheet" href="../css/new_harvest.css" type="text/css" />
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>	
+				<div id="title" class="container">
+        			<h1> Getting Connected with HarvestAPI  </h1>
+    			</div>
+			</header>	
+			
+			<div id="main">
+				
+				<h1 id="intro"> How to Create The PHP file to connect to HarvestAPI </h1> <br /> 
+				
+				<h3> Now we are at the stage where we need to create a PHP file that will enable connection to HarvestAPI. If you 
+					  are familiar with PHP we can proceed, otherwise check out PHP tutorials at this link: <a href="http://www.tutorialspoint.com/php/php_tutorial.pdf" > PHP Tutorials </a>. We would also need to get familiar with cURL as well along the way. </h3> <br />
+				
+				<h1 id="intro"> About cURL </h1> <br /> 
+				<h3> Now cURL is a command line tool for getting or sending files using URL syntax.</h3> <br />
+				
+				<h1 id="intro"> About libcURL </h1> <br /> 
+				<h3> Libcurl is a free client-side URL transfer library, supporting <b> FTP, FTPS, Gopher, HTTP, 
+					  HTTPS, SCP, SFTP, TFTP, Telnet, DICT, the file URI scheme, LDAP, LDAPS, IMAP, POP3, SMTP and RTSP </b>. 
+					  The library supports HTTPS certificates, HTTP POST, HTTP PUT, FTP uploading, Kerberos, HTTP 
+					  form-based upload, proxies, cookies, user-plus-password authentication, file transfer resume, 
+					  and HTTP proxy tunneling.
+				</h3> <br />
+	  
+				<h1 id="intro"> The relationship between cURL and libcURL </h1> <br />
+				
+				<h3> Since cURL uses libcurl, it supports a range of common Internet protocols, currently including HTTP, 
+					  HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, LDAPS, DICT, TELNET, FILE, IMAP, POP3, SMTP and RTSP. For HarvestAPI,
+					  it is under HTTP. 
+				</h3> <br />
+				
+				<textarea readonly="readonly" rows="40" cols="90">
+<?php
+
+// Creating a PHP file for calling HarvestAPI
+					
+function CallAPI($method, $url, $data = false)
+{
+   $curl = curl_init();
+
+	switch ($method)
+	{
+   	case "POST":
+      	curl_setopt($curl, CURLOPT_POST, 1);
+
+         if ($data)
+         	curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+            break;
+        
+    	case "PUT":
+      	curl_setopt($curl, CURLOPT_PUT, 1);
+      break;
+        
+      default:
+      	if ($data)
+      		$url = sprintf("%s?%s", $url, http_build_query($data));
+	}
+}
+// Optional Authentication:
+curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+curl_setopt($curl, CURLOPT_USERPWD, "username:password");
+
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+
+$result = curl_exec($curl);
+
+curl_close($curl);
+return $result;
+
+?>				
+				</textarea>
+				
+				<h3> Now shown above is a PHP snippet (let's call it CallHarvestAPI.php) containing a function which takes 3 parameters.
+				
+					<ul>
+						<li> $method - This is used to determine whether you are trying to GET, POST, PUT, etc. </li>
+						<li> $url - This is referring to the HTTP site that you are using, in this case the HarvestAPI url. </li>
+						<li> $data - is set by default as 'false' unless otherwise. </li>					
+					</ul>				
+					<br />
+					In line 7, <i>curl_init()</i> is used to initialize a cURL session. <br /><br />
+					<i>curl_setopt</i> is used to set an option for a cURL transfer. It takes 3 parameters, in our case it would be 
+					<i>curl_init()</i> which is defined as the variable $curl, a cURL option which are shown in each case of switch
+					and a value which can be any variable or number. <br /> <br /> 
+					
+					You have the option to be a user of HarvestAPI simply by going to <a href="http://harvestdata.herokuapp.com/user/register"> HarvestAPI</a>
+					and go to register. Once registered, you can use your username and password to replace "username:password" in line 29.
+					<br/><br/>
+					In line 34, <i> curl_exec()</i> performs the cURL session $curl and stores it in a varible called $result. <br/><br/>
+					In line 36, <i> curl_close()</i> closes the cURL session and in line 37, the $result is returned.				
+				</h3>
+																
+			</div>
+			
+			<footer>
+			
+			<table> 
+				<tr> 
+					<td> <a href="getting_started.html"> Previous </a></td> 
+    				<td> <a href="crops.html"> Crops </a> </td>
+    				<td> <a href="farmers.html"> Farmers </a> </td>
+    				<td> <a href="farms.html"> Farms </a> </td>
+    				<td> <a href="livestock.html"> Livestock </a> </td>
+    				<td> <a href="prices.html"> Prices </a> </td>
+    			</tr>
+    		</table>
+    		
+		</footer><!-- /footer -->
+		
+		</div>		
+	</body>	
+</html>
