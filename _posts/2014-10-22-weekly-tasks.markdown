@@ -1,0 +1,328 @@
+---
+layout: post
+#baseurl: /badbruce07.github.io/
+title:  "Improving the Previous HarvestAPI version"
+date:   2014-10-22 11:31:00
+categories: jekyll update
+---
+
+On the day of Wednesday October 22, 2014, I was working on the HarvestAPI main page. There were suggestions of making the HarvestAPI logo smaller after some point during scrolling since the top bar changes to a yellow color. While at the top, the screen looks like this:
+<br/><br/>
+
+![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main.png)
+
+<br/><br/>
+After scrolling down a little further, the HarvestAPI logo becomes smaller and inside a yellow top bar as shown below:
+
+<br/><br/>
+
+![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main2.png)
+
+<br/><br/>
+As seen, the image logos are very different in size. How I had to make it smaller was to use the navbar-shrink class tag and as well as using the class id tag of the image. It is shown in the snippet below from the file `agency.css`:
+
+{% highlight css %}
+.navbar-shrink img.harvest_icon{
+	width:160px;
+	height:60px;
+	margin-left: -30px;
+}
+{% endhighlight %}
+
+navbar-shrink is also used in <b>cbpAnimatedHeader.js</b> as shown below in the function called `scrollPage()`:
+
+{% highlight js %}
+
+function scrollPage() {
+	var sy = scrollY();
+	if ( sy >= changeHeaderOn ) {
+		classie.add( header, 'navbar-shrink' );						
+	}
+	else {
+		classie.remove( header, 'navbar-shrink' );			
+	}
+	didScroll = false;
+}
+{% endhighlight %}
+
+<b> Navigating Into The Tabs </b>
+
+All the tabs are navigated simply by just clicking on them.
+<br/>
+<br/>
+<b> <u> Why? </u> </b>
+<br/>
+The tab is clicked and displays the information based on the `Why?` tab as shown below:
+	
+![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main3.png)
+
+<br/>
+The page displays the content for `The Problem` in the `Why?` tab. How it is done is by using a BootStrap class identifier called `col-md-4` and `col-md-6`. col-md-6 sets a column by 50% of the maximum length of the page width while col-md-4 sets a column by 25%. 
+
+{% highlight HTML %}
+
+<div class="row text-center">
+	<div class="col-md-4">
+	      	<h4 class="service-heading"><img src="./img/money-grow.png" alt="Money-Grow"></h4>
+       	</div>
+              	
+	<div class="col-md-6">
+		<h2 class="u160-2"> The Problem </h2>
+					
+		<p class="text-muted">
+			Agriculture is an information business.<br/>
+			Whether you are a farmer deciding what to plant… <br/>
+			A supermarket pricing goods…<br/>
+			Or a public sector official needing information to plan policies…
+			<br/>
+			<br/>
+			We all need information. HarvestAPI was built to remove the friction preventing you from 
+			getting the agriculture data you need.          
+		</p>
+	</div>
+</div>
+{% endhighlight%}
+
+<br/>
+<br/>
+<b> <u> What? </u> </b>
+<br/>
+The tab is clicked and displays the information based on the `What?` tab. The file name is called `portfolio_grid.html`
+
+![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main4.png)
+
+<br/>
+<br/>
+The page displays the content for `What does it give you?` in the `What?` tab. The div inside the first div called `row`, there is a class tag called `col-md-10` and an id tag called `move-content`. <b>col-md-10</b> is from bootstrap.css uses 83.3333% of the page width. <b>move-content</b>, on the other hand was created by me as shown below in the snippet from <b>agency.css</b>:
+
+{% highlight css %}
+#move-content{
+	margin-left:50px; 
+}
+{% endhighlight %}
+
+In `portfolio_grid.html` from lines 19,24 and 29 each has a class tag called `col-md-4`. 
+This tag is a bootstrap.css tag which covers 33.333% of the whole page width. And given that there are jus 3 different set of information, 
+together they fill the full width of the page as shown in the snippet below:
+
+{% highlight HTML %}
+
+<div class="row text-center">
+	<div class="col-md-4">
+		<img src="./img/services/icon-tracktor.png" alt="">
+               	<h4 id="u140-4"> Agriculture Production Data </h4>     
+      	</div>
+                
+        <div class="col-md-4">
+        	<img src="./img/services/icon-price.png" alt="">
+               	<h4 id="u140-4"> Weekly Price Data </h4>
+     	</div>
+                
+        <div class="col-md-4">
+        	<img src="./img/services/icon-farmer.png" alt="">
+               	<h4 id="u140-4"> Producer Information </h4>
+        </div>			
+</div>
+
+{% endhighlight%}
+
+<br/>
+<br/>
+<b><u> For Who? </u></b>
+<br/>
+The page displays the content for `Who Should Use It?` as well as showing the platformers in the `For Who?` tab.
+
+![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main5.png)
+
+
+According to the snippet below:
+
+{% highlight HTML %}
+
+<div class="col-md-4">
+                   
+	<p class="text-muted1"> Who should use it? </p>
+        <ul class="list-user">
+               
+       	 	<li> Farmers </li>
+        	<li> Supermarkets </li>
+        	<li> Startups </li>
+                <li> Government Agencies </li>
+                <li> Academia </li>
+                <li> Financial Institutions </li>
+       	</ul>
+	<br/>                    
+               
+        <p class="text1 col-md-12" > 
+        	Want to learn how you can too can build interesting products using HarvestAPI? 
+               	Check out our documentation here! 
+       	</p>
+               
+</div>
+
+{% endhighlight%}
+
+The outer class tag called col-md-4 uses 33.333% of the page width. In the ul tag there is a class tag called `list-user`. 
+The CSS properties are shown below regarding `list-user`:
+
+{% highlight CSS %}
+ul.list-user{
+	list-style-type: none;
+	margin-left: -20px;
+	text-align: left;
+	font-size: 24px;
+	line-height: 29px;
+	color: #545454;	
+}
+
+ul.list-user li:before
+{	
+	content: "-";
+	width: 1em;	
+}
+{% endhighlight %}
+
+<br/>
+<br/>
+
+<b> <u> Contribute </u> </b>
+
+The page displays the content for `Want to Contribute?` as well as showing the platformers in the `Contribute` tab.
+
+![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main6.png)
+
+In the image above, the image and content are separated into 2 column. The first column shows an up cloud symbol. 
+The page uses bootstrap.css and uses a class tag called `col-md-4` as shown in the snippet below:
+
+{% highlight HTML %}
+<div class="col-md-4">
+	<img src="./img/platform/contribute.png" alt="">               
+</div>
+
+{% endhighlight %}
+
+The second column uses a class tag called `col-md-6`. `col-md-6` uses 50% of the width size as shown in the snippet below:
+
+{% highlight HTML %}
+<div class="col-md-6">
+	<h2 id="u185-2"> Want to contribute? </h2>
+         	
+   <h3 id="doc1"> 
+   	HarvestAPI is an open source project. 
+      We’re still in beta and always looking for feedback and contributions. 
+      Here are ways you can contribute?
+   </h3>
+         	
+   <ul class="list-user1">
+   	<li> Fork the code </li>
+      <li> Post issues, bugs or feature requests </li>
+ 		<li> Get in touch! </li>
+   </ul>
+   <br/>
+   <h3 id="doc1"> 
+   	Want more information or help bringing HarvestAPI to your agriculture agency?
+   </h3>         	
+</div>    
+
+{% endhighlight %}
+
+The CSS class and id tags from the snippet above are shown below:
+
+{% highlight CSS %}
+h2#u185-2{
+	font-size: 38px;
+	line-height: 46px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	text-align: left;
+	margin-top: -20px;
+}
+
+h3#doc1{
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	text-align: left;
+	font-weight: normal;
+	margin-top: -10px;
+}
+
+ul.list-user1{
+	list-style-type: none;
+	margin-left: -20px;
+	text-align: left;
+	font-size: 24px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	color: #ffffff;
+}
+
+ul.list-user1 li:before
+{		
+	line-height: 29px;
+	content: "-";
+	width: 1em;	
+}
+{% endhighlight %}
+
+<b> <u> Collaborators </u> </b>
+
+![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main7.png)
+
+<br/>
+Content has shown the main heading and subheading along with images of the contributors as shown below:
+
+![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main8.png)
+<br/>
+<br/>
+The images of the contributors were all controlled by bootstrap.css by the class tag called `col-md-2`. Some of the `li` tags have
+id tags called `names-main`, `names`, `names-main1`, `names1`, `names4`, `names-main2`, `names2` and `names3`.
+
+{% highlight CSS%}
+li#names-main{
+	margin-left: 30px;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+li#names-main1{
+	margin-left: 7.5px;
+	font-weight: bold;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+li#names-main2{
+	margin-left: 25px;
+	font-weight: bold;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+li#names{
+	margin-left: 35px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+li#names1{
+	margin-left: 15px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+li#names2{
+	margin-left: 28px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+li#names4{
+	margin-left: 31px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+li#names3{
+	margin-left: 40px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+{% endhighlight %}
