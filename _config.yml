@@ -1,0 +1,9 @@
+# Site settings
+title: Bruce's Blog Page
+url: https://badbruce07.github.io
+
+twitter_username: btheo_fu
+github_username:  badbruce07
+
+# Build settings
+markdown: kramdown
