@@ -1,6 +1,6 @@
 ---
 layout: post
-#baseurl: /badbruce07.github.io/
+baseurl: /badbruce07.github.io/
 title:  "Improving the Previous HarvestAPI version"
 date:   2014-10-22 11:31:00
 categories: jekyll update
