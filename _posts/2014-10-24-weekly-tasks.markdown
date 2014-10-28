@@ -1,6 +1,5 @@
 ---
 layout: post
-baseurl: /badbruce07.github.io/
 title:  "Creating The Blog For This Week"
 date:   2014-10-24 11:31:00
 categories: jekyll update

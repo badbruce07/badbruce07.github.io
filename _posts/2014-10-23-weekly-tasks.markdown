@@ -1,6 +1,5 @@
 ---
 layout: post
-baseurl: /badbruce07.github.io/
 title:  "Harvest - Learning to Make a Pull request on Github"
 date:   2014-10-23 12:27:54
 categories: jekyll update

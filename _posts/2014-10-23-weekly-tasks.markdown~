@@ -1,6 +1,6 @@
 ---
 layout: post
-baseurl: /badbruce07.github.io/
+baseurl: /badbruce07.github.io
 title:  "Harvest - Learning to Make a Pull request on Github"
 date:   2014-10-23 12:27:54
 categories: jekyll update
@@ -74,6 +74,6 @@ git push origin gh-pages
 
 The terminal will then ask for your github username and password to let the push proceed.
 
-NB. <br/>
+N.B. <br/>
 Even tho the content is pushed to github, it will <b>NOT</b> be shown to the wider public since the original creator
 hasn't accepted the pull request. Varunity would have to accept it for the changes to be made.

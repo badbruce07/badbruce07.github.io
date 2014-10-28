@@ -1,6 +1,5 @@
 ---
 layout: post
-baseurl: /badbruce07.github.io/
 title:  "Progress on HarvestAPI Main Page"
 date:   2014-10-21 11:31:00
 categories: jekyll update

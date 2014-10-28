@@ -1,6 +1,5 @@
 ---
 layout: post
-baseurl: /badbruce07.github.io/
 title:  "Improving the Previous HarvestAPI version"
 date:   2014-10-22 11:31:00
 categories: jekyll update
@@ -9,14 +8,14 @@ categories: jekyll update
 On the day of Wednesday October 22, 2014, I was working on the HarvestAPI main page. There were suggestions of making the HarvestAPI logo smaller after some point during scrolling since the top bar changes to a yellow color. While at the top, the screen looks like this:
 <br/><br/>
 
-![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main.png)
+![My helpful screenshot]({{ site.url }}/assets/harvest_main.png)
 
 <br/><br/>
 After scrolling down a little further, the HarvestAPI logo becomes smaller and inside a yellow top bar as shown below:
 
 <br/><br/>
 
-![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main2.png)
+![My helpful screenshot]({{ site.url }}/assets/harvest_main2.png)
 
 <br/><br/>
 As seen, the image logos are very different in size. How I had to make it smaller was to use the navbar-shrink class tag and as well as using the class id tag of the image. It is shown in the snippet below from the file `agency.css`:
@@ -54,7 +53,7 @@ All the tabs are navigated simply by just clicking on them.
 <br/>
 The tab is clicked and displays the information based on the `Why?` tab as shown below:
 	
-![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main3.png)
+![My helpful screenshot]({{ site.url }}/assets/harvest_main3.png)
 
 <br/>
 The page displays the content for `The Problem` in the `Why?` tab. How it is done is by using a BootStrap class identifier called `col-md-4` and `col-md-6`. col-md-6 sets a column by 50% of the maximum length of the page width while col-md-4 sets a column by 25%. 
@@ -89,7 +88,7 @@ The page displays the content for `The Problem` in the `Why?` tab. How it is don
 <br/>
 The tab is clicked and displays the information based on the `What?` tab. The file name is called `portfolio_grid.html`
 
-![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main4.png)
+![My helpful screenshot]({{ site.url }}/assets/harvest_main4.png)
 
 <br/>
 <br/>
@@ -132,7 +131,7 @@ together they fill the full width of the page as shown in the snippet below:
 <br/>
 The page displays the content for `Who Should Use It?` as well as showing the platformers in the `For Who?` tab.
 
-![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main5.png)
+![My helpful screenshot]({{ site.url }}/assets/harvest_main5.png)
 
 
 According to the snippet below:
@@ -189,7 +188,7 @@ ul.list-user li:before
 
 The page displays the content for `Want to Contribute?` as well as showing the platformers in the `Contribute` tab.
 
-![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main6.png)
+![My helpful screenshot]({{ site.url }}/assets/harvest_main6.png)
 
 In the image above, the image and content are separated into 2 column. The first column shows an up cloud symbol. 
 The page uses bootstrap.css and uses a class tag called `col-md-4` as shown in the snippet below:
@@ -268,12 +267,12 @@ ul.list-user1 li:before
 
 <b> <u> Collaborators </u> </b>
 
-![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main7.png)
+![My helpful screenshot]({{ site.url }}/assets/harvest_main7.png)
 
 <br/>
 Content has shown the main heading and subheading along with images of the contributors as shown below:
 
-![My helpful screenshot]({{ site.baseurl }}/assets/harvest_main8.png)
+![My helpful screenshot]({{ site.url }}/assets/harvest_main8.png)
 <br/>
 <br/>
 The images of the contributors were all controlled by bootstrap.css by the class tag called `col-md-2`. Some of the `li` tags have
