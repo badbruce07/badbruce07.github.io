@@ -5,9 +5,57 @@
     <description></description>
     <link>https://badbruce07.github.io/</link>
     <atom:link href="https://badbruce07.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 28 Oct 2014 11:58:32 -0500</pubDate>
-    <lastBuildDate>Tue, 28 Oct 2014 11:58:32 -0500</lastBuildDate>
+    <pubDate>Sat, 08 Nov 2014 18:04:52 -0500</pubDate>
+    <lastBuildDate>Sat, 08 Nov 2014 18:04:52 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Mobile and Tablet for HarvestAPI Progress and Chikungunya Virus</title>
+        <description>&lt;p&gt;On Wednesday October 29, 2014&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Oct 2014 06:31:00 -0500</pubDate>
+        <link>https://badbruce07.github.io/jekyll/update/2014/10/29/weekly-tasks.html</link>
+        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/10/29/weekly-tasks.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Looking on the Mobile and Tablet View of HarvestAPI (Cont'd)</title>
+        <description>&lt;p&gt;On Monday October 28, 2014 I Started looking on a css file called normailze.css to see if it can help improve the appearance 
+of elements on the mobile and tablet side of HarvestAPI, as well as made note of the problems that were faced in the 
+CSS side of HarvestAPI. I also discovered a mobile viewer site called &lt;code&gt;https://app.getmobilizer.com/&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Oct 2014 06:31:00 -0500</pubDate>
+        <link>https://badbruce07.github.io/jekyll/update/2014/10/28/weekly-tasks.html</link>
+        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/10/28/weekly-tasks.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Looking on the Mobile and Tablet View of HarvestAPI</title>
+        <description>&lt;p&gt;On Monday October 27, 2014 I continued working on HarvestAPI main page and I also spotted where the main issues were on the mobile
+and tablet view of the page.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 27 Oct 2014 06:31:00 -0500</pubDate>
+        <link>https://badbruce07.github.io/jekyll/update/2014/10/27/weekly-tasks.html</link>
+        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/10/27/weekly-tasks.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Creating The Blog For This Week</title>
