@@ -5,13 +5,31 @@
     <description></description>
     <link>https://badbruce07.github.io/</link>
     <atom:link href="https://badbruce07.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 08 Nov 2014 19:16:39 -0500</pubDate>
-    <lastBuildDate>Sat, 08 Nov 2014 19:16:39 -0500</lastBuildDate>
+    <pubDate>Sat, 08 Nov 2014 23:37:57 -0500</pubDate>
+    <lastBuildDate>Sat, 08 Nov 2014 23:37:57 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Chikungunya Virus</title>
+        <title>Graduation Day/Chikungunya Virus</title>
         <description>
+</description>
+        <pubDate>Fri, 31 Oct 2014 06:31:00 -0500</pubDate>
+        <link>https://badbruce07.github.io/jekyll/update/2014/10/31/weekly-tasks.html</link>
+        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/10/31/weekly-tasks.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Chikungunya Virus</title>
+        <description>&lt;p&gt;On Thursday October 30, 2014 I stayed at my cousins’ house next door to try and recover in time for graduation the following day since
+I was diagnosed with the Chikungunya virus. It was painful due to joint pains and severe fever. I was advised by Varun Baker to take some
+papaya leaf juice which was to be taken twice (once every 3 hours) along with panadol. I took the panadol in the evenings to knock
+me out to sleep.&lt;/p&gt;
 </description>
         <pubDate>Thu, 30 Oct 2014 06:31:00 -0500</pubDate>
         <link>https://badbruce07.github.io/jekyll/update/2014/10/30/weekly-tasks.html</link>
@@ -28,9 +46,10 @@
         <title>Mobile and Tablet for HarvestAPI Progress and Chikungunya Virus</title>
         <description>&lt;p&gt;On Wednesday October 29,2014 I continued doing sum research on finding out how to make HarvestAPI appear better on mobile phones 
 and tablets. Upon using &lt;code&gt;https://app.getmobilizer.com/&lt;/code&gt; the screens look like these below: 
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://badbruce07.github.io/assets/app-mobilizer1.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://badbruce07.github.io/assets/app-mobilizer1.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://badbruce07.github.io/assets/app-mobilizer2.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Oct 2014 06:31:00 -0500</pubDate>
         <link>https://badbruce07.github.io/jekyll/update/2014/10/29/weekly-tasks.html</link>
