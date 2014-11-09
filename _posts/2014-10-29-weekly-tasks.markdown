@@ -10,7 +10,9 @@ and tablets. Upon using `https://app.getmobilizer.com/` the screens look like th
 <br/><br/>
 Image 1
 ![My helpful screenshot]({{ site.url }}/assets/app-mobilizer1.png)
+<br/><br/>
 Image 2
 ![My helpful screenshot]({{ site.url }}/assets/app-mobilizer2.png)
+<br/><br/>
 Image 3
 ![My helpful screenshot]({{ site.url }}/assets/app-mobilizer3.png)
