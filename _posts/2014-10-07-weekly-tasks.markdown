@@ -17,7 +17,7 @@ categories: jekyll update
 </h3> 
 <br/>
 
-<h3> <b> About cURL  </b> /h3> <br /> 
+<h3> <b> About cURL  </b> </h3> <br /> 
 <h3> Now cURL is a command line tool for getting or sending files using URL syntax.</h3> <br />
 
 <h3> <b>About libcURL </b> </h3> <br /> 
@@ -29,3 +29,11 @@ categories: jekyll update
 	and HTTP proxy tunneling.
 </h3> 
 <br />
+
+<h3> <b> The relationship between cURL and libcURL </b> </h3> <br />
+				
+<h3> 
+	Since cURL uses libcurl, it supports a range of common Internet protocols, currently including HTTP, 
+	HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, LDAPS, DICT, TELNET, FILE, IMAP, POP3, SMTP and RTSP. For HarvestAPI,
+	it is under HTTP. 
+</h3> <br />
