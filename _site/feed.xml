@@ -5,9 +5,24 @@
     <description></description>
     <link>https://badbruce07.github.io/</link>
     <atom:link href="https://badbruce07.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 10 Nov 2014 11:18:32 -0500</pubDate>
-    <lastBuildDate>Mon, 10 Nov 2014 11:18:32 -0500</lastBuildDate>
+    <pubDate>Mon, 10 Nov 2014 11:30:11 -0500</pubDate>
+    <lastBuildDate>Mon, 10 Nov 2014 11:30:11 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>HarvestAPI for Mobile and Tablet</title>
+        <description>&lt;p&gt;On November 6, 2014, I worked on the media min-width size for each device.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Nov 2014 06:31:00 -0500</pubDate>
+        <link>https://badbruce07.github.io/jekyll/update/2014/11/06/weekly-tasks.html</link>
+        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/11/06/weekly-tasks.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Return To Office</title>
@@ -189,86 +204,6 @@ by Matthew MacNaughton.&lt;/p&gt;
         <pubDate>Fri, 24 Oct 2014 06:31:00 -0500</pubDate>
         <link>https://badbruce07.github.io/jekyll/update/2014/10/24/weekly-tasks.html</link>
         <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/10/24/weekly-tasks.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Harvest - Learning to Make a Pull request on Github</title>
-        <description>&lt;p&gt;On Thursday October 23, 2014, I worked on using github to learn how to remove files from another repository. In other words HarvestAPI.
-Since I have made many changes in creating an improved HarvestAPI, the owner of the original version was Varun Baker aka varunity on 
-GitHub. In order to make a pull request, I had to first &lt;code&gt;fork&lt;/code&gt; and then &lt;code&gt;pull&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt; About Pull Requests &lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;Pull requests let you tell others about changes you’ve pushed to a GitHub repository. 
-Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, 
-and even push follow-up commits if necessary.
-This guide walks through the process of sending a hypothetical pull request and using the various code review 
-and management tools to take the change to completion.&lt;/p&gt;
-
-&lt;p&gt;So at first I had to clone the HarvestAPI repository and then in the terminal, I typed the command:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;badbruce07&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;HarvestAPI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This would therefore download all of HarvestAPI content to any directory you wish to work from. Then you open the directory of HarvestAPI 
-simply by typing &lt;code&gt;cd &amp;lt;Directory&amp;gt;&lt;/code&gt; in the terminal.
-&lt;br /&gt;
-After I’ve entered the directory path, I type in the terminal:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;checkout&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pages&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This would allow me to navigate through the gh-pages branch. &lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt; About git checkout &lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;The git checkout command lets you navigate between the branches created by git branch. 
-Checking out a branch updates the files in the working directory to match the version stored in that branch, 
-and it tells Git to record all new commits on that branch. Think of it as a way to select which line of development 
-you’re working on.&lt;/p&gt;
-
-&lt;p&gt;In the previous module, we saw how git checkout can be used to view old commits. 
-Checking out branches is similar in that the working directory is updated to match the selected branch/revision; 
-however, new changes are saved in the project history—that is, it’s not a read-only operation.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt; Removing Content From the gh-pages Branch &lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;In order to remove content from the gh-pages branch, I had to use the command:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This is due to the fact that the existing content need to be replaced before adding the new information to the gh-pages branch
-in the HarvestAPI repository. Then you can apply the command to make the changes:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;commit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Changes&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;b&gt; Adding the new content to the repository &lt;/b&gt; &lt;br /&gt;
-You can copy your new files from the directory you were working on into the HarvestAPI folder. In adding all of the content to 
-git you use the command:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Then you will have to type the following command in making the changes:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;commit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Adding Files&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Then you will have to apply a push to gh-pages. This therefore shows all the new content that will be pushed to github:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;push&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;origin&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pages&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The terminal will then ask for your github username and password to let the push proceed.&lt;/p&gt;
-
-&lt;p&gt;N.B. &lt;br /&gt;
-Even tho the content is pushed to github, it will &lt;b&gt;NOT&lt;/b&gt; be shown to the wider public since the original creator
-hasn’t accepted the pull request. Varunity would have to accept it for the changes to be made.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 23 Oct 2014 07:27:54 -0500</pubDate>
-        <link>https://badbruce07.github.io/jekyll/update/2014/10/23/weekly-tasks.html</link>
-        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/10/23/weekly-tasks.html</guid>
         
         
         <category>jekyll</category>
