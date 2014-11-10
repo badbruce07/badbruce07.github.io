@@ -97,7 +97,7 @@ the term `plant_date`.
 
 <ul>
 	<li>
-		In line 14, json_decode is used to decode a JSON string and then it becomes a PHP variable <b> $crop_objects. </b>
+		In line 14, <b> <u>json_decode</u> </b> is used to decode a JSON string and then it becomes a PHP variable <b> $crop_objects. </b>
 	</li>
 	<li>
 		In line 16, <b> $num_crops </b> keeps a count of the number of crops.				  	
