@@ -476,4 +476,91 @@ Yesterday I had created CSS for `media min-width size 768px`. Now there are a fe
 	}
 
 }
+
+@media(min-width:1197px) {
+	
+	header {
+   	text-align: center;
+    	color: #000;
+    	background-attachment: scroll;
+    	background-image: url(../img/vector_bg.png);
+    	background-position: center center;
+    	background-repeat: none;
+    	-webkit-background-size: cover;
+    	-moz-background-size: cover;
+    	background-size: cover;
+    	-o-background-size: cover;
+    	height: 1370px;
+    	width: 1197px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	
+	header .intro-text .intro-heading {
+        margin-top: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.1); 
+    }
+    
+   #info_farm{
+		margin-top: 100px;
+		font-size: 40px;
+	}
+	
+	a#header_col{
+		color: #006400;
+	}
+	
+ 	.bg-light-gray {
+    	background-color: #6ACD7C;
+    	width: 1197px;
+   	margin-left: auto;
+    	margin-right: auto;
+	}
+	
+	.bg-blue{
+		background-color: #3FADA4;
+		width: 1197px;
+		margin-left: auto;
+   	margin-right: auto;
+	}
+	
+	section.bg-white{
+		background-color: #FFFFFF;
+		width: 1197px;
+   	margin-left: auto;
+    	margin-right: auto;
+	}
+	
+	img.spons{
+		width: 1197px;
+		margin-left: auto;
+    	margin-right: auto;	
+	}
+	
+	img#github_link{
+		position: absolute;
+		border: 0; 
+		top: 0;
+		right: 0;
+	} 	
+ 	
+ 	
+	.navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #FFD700;
+        width: 1197px;
+        height: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 {% endhighlight %}
