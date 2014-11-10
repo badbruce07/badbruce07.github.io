@@ -29,3 +29,15 @@ categories: jekyll update
 	and HTTP proxy tunneling.
 </h3> 
 <br />
+
+<h3> <b> The relationship between cURL and libcURL </b> </h3> <br />
+				
+<h3> 
+	Since cURL uses libcURL, it supports a range of common Internet protocols, currently including HTTP, 
+	HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, LDAPS, DICT, TELNET, FILE, IMAP, POP3, SMTP and RTSP. For HarvestAPI,
+	it is under HTTP. 
+</h3> <br />
+
+{% highlight PHP%}
+
+{% endhighlight %}

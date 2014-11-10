@@ -33,7 +33,51 @@ categories: jekyll update
 <h3> <b> The relationship between cURL and libcURL </b> </h3> <br />
 				
 <h3> 
-	Since cURL uses libcurl, it supports a range of common Internet protocols, currently including HTTP, 
+	Since cURL uses libcURL, it supports a range of common Internet protocols, currently including HTTP, 
 	HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, LDAPS, DICT, TELNET, FILE, IMAP, POP3, SMTP and RTSP. For HarvestAPI,
 	it is under HTTP. 
 </h3> <br />
+
+{% highlight PHP%}
+
+<?php
+
+	// Creating a PHP file for calling HarvestAPI
+					
+	function CallAPI($method, $url, $data = false)
+	{
+   	$curl = curl_init();
+
+		switch ($method)
+		{
+   		case "POST":
+      		curl_setopt($curl, CURLOPT_POST, 1);
+
+         	if ($data)
+         		curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+            	break;
+        
+    		case "PUT":
+      		curl_setopt($curl, CURLOPT_PUT, 1);
+      		break;
+        
+      		default:
+      			if ($data)
+      				$url = sprintf("%s?%s", $url, http_build_query($data));
+		}
+	}
+	// Optional Authentication:
+	curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+	curl_setopt($curl, CURLOPT_USERPWD, "username:password");
+
+	curl_setopt($curl, CURLOPT_URL, $url);
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+
+	$result = curl_exec($curl);
+
+	curl_close($curl);
+	return $result;
+
+?>				
+
+{% endhighlight %}
