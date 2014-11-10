@@ -21,29 +21,27 @@ You can see a view of the snippet below:
 <br/><br/>
 
 {% highlight PHP %}
-
 <?php
-		include("CallHarvestAPI.php");
+	include("CallHarvestAPI.php");
 
-		/*---------------------------------------------------------------------------------------*/
-		/*---------------------------------- Crop Details ---------------------------------------*/
-		/*---------------------------------------------------------------------------------------*/
+	/*---------------------------------------------------------------------------------------*/
+	/*---------------------------------- Crop Details ---------------------------------------*/
+	/*---------------------------------------------------------------------------------------*/
 		
-		$cropname = $_GET['crop_name'];
+	$cropname = $_GET['crop_name'];
 
-		// call crops resource to return string
-		$crops = CallAPI('GET', 'harvestdata.herokuapp.com/crops/',
-					array('search'=>$cropname, 'ordering'=>'-plant_date'));
+	// call crops resource to return string
+	$crops = CallAPI('GET', 'harvestdata.herokuapp.com/crops/',
+				array('search'=>$cropname, 'ordering'=>'-plant_date'));
 
-		//convert JSON string to PHP variable (object)
-		$crop_objects = json_decode($crops);
-			
-		$num_crops = $crop_objects -> count;
-		$next_page_crop_url  = $crop_objects -> next;
-			
-		// getting the actual crops from results
-		$crops_dem = $crop_objects -> results;
+	//convert JSON string to PHP variable (object)
+	$crop_objects = json_decode($crops);
 		
+	$num_crops = $crop_objects -> count;
+	$next_page_crop_url  = $crop_objects -> next;
+		
+	// getting the actual crops from results
+	$crops_dem = $crop_objects -> results;
 ?>
 	
 <form action="crops.php" method="get">
@@ -66,17 +64,17 @@ You can see a view of the snippet below:
 			
 <?php 
 			
-	foreach($crops_dem as $crop)
-	{
-		echo '<tr>
-				<td>'.$crop -> crop_name.'</td>
-				<td>'.$crop -> estimated_vol. '</td>
-				<td>'.$crop -> area. '</td>
-				<td>'.$crop -> plant_date. '</td>
-				<td>'.$crop -> exp_date. '</td>
-				</tr>';			
-	}				
-			
+foreach($crops_dem as $crop)
+{
+	echo '<tr>
+			<td>'.$crop -> crop_name.'</td>
+			<td>'.$crop -> estimated_vol. '</td>
+			<td>'.$crop -> area. '</td>
+			<td>'.$crop -> plant_date. '</td>
+			<td>'.$crop -> exp_date. '</td>
+			</tr>';			
+}				
 ?>
-
 {% endhighlight %}
+
+<br/><br/>
