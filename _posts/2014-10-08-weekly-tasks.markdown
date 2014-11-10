@@ -78,7 +78,14 @@ foreach($crops_dem as $crop)
 {% endhighlight %}
 
 <br/><br/>
-From the above snippet called `Crops.php`, in line 9, we used an include function which calls back the `CallHarvestAPI.php` snippet.
-On line 15 we created a variable name  called <b> $cropname </b> which defines `$_GET['crop_name']`. The variable `crop_name` is in 
-fact a field in crops endpoint and is seen again in line 35 in our form. The aim is to search for a crop name to display a 
-list with the fields in the table.
+From the above snippet called `Crops.php`, in line 11, we used an include function which calls back the `CallHarvestAPI.php` snippet.
+On line 8 we created a variable name  called <b> $cropname </b> which defines `$_GET['crop_name']`. The variable `crop_name` is in 
+fact a field in crops endpoint and is seen again in line 27 in our form. The aim is to search for a crop name to display a 
+list with the fields in the table. <br/>
+In lines 11-12 a variable called $crops and it is equivalent to CallAPI function that has 3 parameters. 
+If you recall the CallAPI function that was in CallHarvestAPI.php the parameters include:
+<ul>
+	<li> $method = 'GET' </li>
+	<li> $url = 'harvestdata.herokuapp.com/crops/'</li>
+	<li> $data = array('search'=>$cropname, 'ordering'=>'-plant_date') </li>
+</ul>
