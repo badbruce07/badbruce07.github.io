@@ -84,7 +84,7 @@ Now shown above is a PHP snippet (let's call it CallHarvestAPI.php) containing a
 <ul>
 	<li> $method - This is used to determine whether you are trying to `GET`, `POST`, `PUT`, etc. </li>
 	<li> $url - This is referring to the HTTP site that you are using, in this case the HarvestAPI url. </li>
-	<li> $data - is set by default as <b>false<b> unless otherwise. </li>					
+	<li> $data - is set by default as <b>false</b> unless otherwise. </li>					
 </ul>				
 <br />
 
