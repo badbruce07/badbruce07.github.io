@@ -116,3 +116,7 @@ the term `plant_date`.
 Tables are created so that the results can be seen there and we have a foreach() loop to print the fields of our choice. <br/>
 Look at the table below: <br/>
 ![My helpful screenshot]({{ site.url }}/assets/screenshot_crops.png)
+<br /> <br />
+						
+As shown above the foreach() loop in line 51 takes care of each row that has details regarding the crop name 
+(take a look at the URL locator and you will see `crop_name=Potato`)
