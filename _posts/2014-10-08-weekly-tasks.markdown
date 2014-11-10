@@ -94,3 +94,15 @@ NB. For the <b> $data </b> variable, you can use any variable name such as `comm
 `Crops Endpoint` consists of field names such as `{"crop_name", "common_name", "estimated_vol", "variety, "plant_date", "count",
 "area", "status", "exp_date", "farm"}`. Also, the ordering is done by plant_date in descending order since there is a (-) before 
 the term `plant_date`.
+
+<ul>
+	<li>
+		In line 14, `json_decode` is used to decode a JSON string and then it becomes a PHP variable <b> $crop_objects. </b>
+	</li>
+	<li>
+		In line 16, <b> $num_crops </b> keeps a count of the number of crops.				  	
+	</li>
+				  	
+	<li>
+		In line 20, <b> $crops_dem </b> gets the crops from results.				  	
+	</li>
