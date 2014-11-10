@@ -5,8 +5,8 @@ date:   2014-10-07 11:31:00
 categories: jekyll update
 ---
 
-<h2> Getting Connected with HarvestAPI </h2>
-<br/><br/>
+<h2> <b> Getting Connected with HarvestAPI </b> </h2>
+<br/>
 
 <h3> <b> How to Create The PHP file to connect to HarvestAPI </b> </h3>  
 
@@ -93,3 +93,7 @@ In line 7, `curl_init()` is used to initialize a cURL session. <br />
 `curl_init()` which is defined as the variable $curl, a cURL option which are shown in each case of switch
 and a value which can be any variable or number.
 <br/>
+
+You have the option to be a user of HarvestAPI simply by going to 
+`<a href="http://harvestdata.herokuapp.com/user/register"> HarvestAPI</a>`	
+and click the sign up tab. Once registered, you can use your username and password to replace "username:password" in line 29.
