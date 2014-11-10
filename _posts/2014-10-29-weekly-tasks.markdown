@@ -34,3 +34,6 @@ Image 8
 <br/><br/>
 Image 9
 ![My helpful screenshot]({{ site.url }}/assets/app-mobilizer9.png)
+
+As seen from above, for every device shown in the app-mobilizer, they all appear differently from each other. During midday I came
+down with the chikungunya virus.
