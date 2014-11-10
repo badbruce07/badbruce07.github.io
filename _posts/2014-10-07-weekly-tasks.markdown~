@@ -17,7 +17,7 @@ We would also need to get familiar with cURL as well along the way.
 <br/>
 
 <h3> <b> About cURL  </b> </h3> <br /> 
-<h3> Now cURL is a command line tool for getting or sending files using URL syntax.</h3> <br />
+Now cURL is a command line tool for getting or sending files using URL syntax. <br />
 
 <h3> <b>About libcURL </b> </h3> <br /> 
 
