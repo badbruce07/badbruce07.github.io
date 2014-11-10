@@ -90,3 +90,9 @@ categories: jekyll update
 	<li> $data - is set by default as 'false' unless otherwise. </li>					
 </ul>				
 <br />
+<h3>
+	In line 7, `curl_init()` is used to initialize a cURL session. <br /><br />
+	`curl_setopt` is used to set an option for a cURL transfer. It takes 3 parameters, in our case it would be 
+	`curl_init()` which is defined as the variable $curl, a cURL option which are shown in each case of switch
+	and a value which can be any variable or number.
+</h3> <br/>
