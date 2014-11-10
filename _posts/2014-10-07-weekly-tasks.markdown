@@ -14,7 +14,7 @@ Now we are at the stage where we need to create a PHP file that will enable conn
 If you are familiar with PHP we can proceed, otherwise check out PHP tutorials at this link: 
 <a href="http://www.tutorialspoint.com/php/php_tutorial.pdf" > PHP Tutorials </a>. 
 We would also need to get familiar with cURL as well along the way. 
-<br/>
+<br/><br/>
 
 <h3> <b> About cURL  </b> </h3>
 Now cURL is a command line tool for getting or sending files using URL syntax. <br /><br/>
@@ -26,14 +26,14 @@ HTTPS, SCP, SFTP, TFTP, Telnet, DICT, the file URI scheme, LDAP, LDAPS, IMAP, PO
 The library supports HTTPS certificates, HTTP POST, HTTP PUT, FTP uploading, Kerberos, HTTP 
 form-based upload, proxies, cookies, user-plus-password authentication, file transfer resume, 
 and HTTP proxy tunneling.
-<br />
+<br /> <br/>
 
 <h3> <b> The relationship between cURL and libcURL </b> </h3> 
 				
 Since cURL uses libcURL, it supports a range of common Internet protocols, currently including HTTP, 
 HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, LDAPS, DICT, TELNET, FILE, IMAP, POP3, SMTP and RTSP. For HarvestAPI,
 it is under HTTP. 
-<br />
+<br /> <br/>
 
 {% highlight PHP%}
 

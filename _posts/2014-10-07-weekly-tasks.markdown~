@@ -16,10 +16,10 @@ If you are familiar with PHP we can proceed, otherwise check out PHP tutorials a
 We would also need to get familiar with cURL as well along the way. 
 <br/>
 
-<h3> <b> About cURL  </b> </h3> <br /> 
+<h3> <b> About cURL  </b> </h3>
 Now cURL is a command line tool for getting or sending files using URL syntax. <br /><br/>
 
-<h3> <b>About libcURL </b> </h3> <br /> 
+<h3> <b>About libcURL </b> </h3> 
 
 Libcurl is a free client-side URL transfer library, supporting FTP, FTPS, Gopher, HTTP, 
 HTTPS, SCP, SFTP, TFTP, Telnet, DICT, the file URI scheme, LDAP, LDAPS, IMAP, POP3, SMTP and RTSP. 
@@ -28,7 +28,7 @@ form-based upload, proxies, cookies, user-plus-password authentication, file tra
 and HTTP proxy tunneling.
 <br />
 
-<h3> <b> The relationship between cURL and libcURL </b> </h3> <br />
+<h3> <b> The relationship between cURL and libcURL </b> </h3> 
 				
 Since cURL uses libcURL, it supports a range of common Internet protocols, currently including HTTP, 
 HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, LDAPS, DICT, TELNET, FILE, IMAP, POP3, SMTP and RTSP. For HarvestAPI,
