@@ -5,13 +5,54 @@
     <description></description>
     <link>https://badbruce07.github.io/</link>
     <atom:link href="https://badbruce07.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 10 Nov 2014 10:38:52 -0500</pubDate>
-    <lastBuildDate>Mon, 10 Nov 2014 10:38:52 -0500</lastBuildDate>
+    <pubDate>Mon, 10 Nov 2014 11:07:31 -0500</pubDate>
+    <lastBuildDate>Mon, 10 Nov 2014 11:07:31 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
+        <title>Chikungunya Virus/Work from Home Pt 2</title>
+        <description>&lt;p&gt;On November 4, 2014, despite feeling a bit better from the virus I was advised to stayed home for the next two days for safety measures
+so I did some research on fixing the HarvestAPI page from home.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Nov 2014 06:31:00 -0500</pubDate>
+        <link>https://badbruce07.github.io/jekyll/update/2014/11/04/weekly-tasks.html</link>
+        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/11/04/weekly-tasks.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Chikungunya Virus/Work From Home</title>
+        <description>&lt;p&gt;On November 3, 2014, despite feeling a bit better from the virus I was advised to stayed home for the next two days for safety measures
+so I did some research on fixing the HarvestAPI page from home.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Nov 2014 06:31:00 -0500</pubDate>
+        <link>https://badbruce07.github.io/jekyll/update/2014/11/03/weekly-tasks.html</link>
+        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/11/03/weekly-tasks.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
         <title>Graduation Day/Chikungunya Virus</title>
-        <description>
+        <description>&lt;p&gt;On Friday October 31, 2014 I recovered from the fever and some of my joints were feeling better so I was able to make it to the 
+graduation ceremony. Even though I still had the virus in me, I couldn’t let that stop me from reaching a once in a lifetime event.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://badbruce07.github.io/assets/grad-pic1.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://badbruce07.github.io/assets/grad-pic2.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://badbruce07.github.io/assets/grad-pic3.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://badbruce07.github.io/assets/grad-pic4.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 31 Oct 2014 06:31:00 -0500</pubDate>
         <link>https://badbruce07.github.io/jekyll/update/2014/10/31/weekly-tasks.html</link>
@@ -513,21 +554,6 @@ id tags called &lt;code&gt;names-main&lt;/code&gt;, &lt;code&gt;names&lt;/code&g
         <pubDate>Wed, 22 Oct 2014 06:31:00 -0500</pubDate>
         <link>https://badbruce07.github.io/jekyll/update/2014/10/22/weekly-tasks.html</link>
         <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/10/22/weekly-tasks.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Progress on HarvestAPI Main Page</title>
-        <description>&lt;p&gt;On the day of Tuesday October 21, 2014, I continued on the HarvestAPI main page where my task is to create an improved version of it. The tools that I have utilized is Jekyll with Pages and I found a template from last week called &lt;code&gt;agency-jekyll-theme-gh-pages&lt;/code&gt; on the URL link called &lt;a&gt;http://jekyllthemes.org/&lt;/a&gt;. Using my knowledge in CSS as well as utilizing BootstrapCSS, I was able to arrange the icons as it was in the original layout but only this time with the tabs. When the tabs are clicked, it will direct me to its content information. I had to look into the CSS content from bootstrap.css as well as making other modifications with font size and images.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 21 Oct 2014 06:31:00 -0500</pubDate>
-        <link>https://badbruce07.github.io/jekyll/update/2014/10/21/weekly-tasks.html</link>
-        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/10/21/weekly-tasks.html</guid>
         
         
         <category>jekyll</category>

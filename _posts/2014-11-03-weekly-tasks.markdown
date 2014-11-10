@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Chikungunya Virus"
+title:  "Chikungunya Virus/Work From Home"
 date:   2014-11-03 11:31:00
 categories: jekyll update
 ---

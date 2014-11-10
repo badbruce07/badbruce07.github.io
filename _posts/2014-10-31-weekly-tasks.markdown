@@ -15,4 +15,3 @@ graduation ceremony. Even though I still had the virus in me, I couldn't let tha
 ![My helpful screenshot]({{ site.url }}/assets/grad-pic3.jpg)
 <br/><br/>
 ![My helpful screenshot]({{ site.url }}/assets/grad-pic4.jpg)
-
