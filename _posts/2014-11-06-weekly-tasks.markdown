@@ -115,3 +115,6 @@ On November 6, 2014, I worked on the media min-width size for each device. One e
 }
 
 {% endhighlight%}
+
+Its view looks a lot like this:
+![My helpful screenshot]({{ site.url }}/assets/harvest768-view.png)
