@@ -12,10 +12,17 @@ I had to also install curl in the terminal using the command below:
 sudo apt-get install php5-curl
 {% endhighlight %} 
 <br/>
+![My helpful screenshot]({{ site.url }}/assets/first_install.png)
+
+<br/><br/>
 and then restart the server using the command: <br/><br/>
 
 {% highlight ruby %}
 sudo service apache2 restart
 {% endhighlight %} 
+<br/><br/>
+
+![My helpful screenshot]({{ site.url }}/assets/first_install2.png)
+
 <br/><br/>
  I also navigate through the various endpoints of HarvestAPI.
