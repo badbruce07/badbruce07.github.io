@@ -80,7 +80,7 @@ it is under HTTP.
 {% endhighlight %}
 
 <br/><br/>
-<h3> Now shown above is a PHP snippet (let's call it CallHarvestAPI.php) containing a function which takes 3 parameters. </h3>
+Now shown above is a PHP snippet (let's call it CallHarvestAPI.php) containing a function which takes 3 parameters.
 <ul>
 	<li> $method - This is used to determine whether you are trying to GET, POST, PUT, etc. </li>
 	<li> $url - This is referring to the HTTP site that you are using, in this case the HarvestAPI url. </li>
@@ -88,7 +88,7 @@ it is under HTTP.
 </ul>				
 <br />
 
-In line 7, `curl_init()` is used to initialize a cURL session. <br /><br />
+In line 7, `curl_init()` is used to initialize a cURL session. <br />
 `curl_setopt` is used to set an option for a cURL transfer. It takes 3 parameters, in our case it would be 
 `curl_init()` which is defined as the variable $curl, a cURL option which are shown in each case of switch
 and a value which can be any variable or number.

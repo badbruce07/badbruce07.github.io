@@ -10,33 +10,30 @@ categories: jekyll update
 
 <h3> <b> How to Create The PHP file to connect to HarvestAPI </b> <h3> <br /> 
 
-<h3> Now we are at the stage where we need to create a PHP file that will enable connection to HarvestAPI. 
-	  If you are familiar with PHP we can proceed, otherwise check out PHP tutorials at this link: 
-	  <a href="http://www.tutorialspoint.com/php/php_tutorial.pdf" > PHP Tutorials </a>. 
-	  We would also need to get familiar with cURL as well along the way. 
-</h3> 
+Now we are at the stage where we need to create a PHP file that will enable connection to HarvestAPI. 
+If you are familiar with PHP we can proceed, otherwise check out PHP tutorials at this link: 
+<a href="http://www.tutorialspoint.com/php/php_tutorial.pdf" > PHP Tutorials </a>. 
+We would also need to get familiar with cURL as well along the way. 
 <br/>
 
 <h3> <b> About cURL  </b> </h3> <br /> 
 <h3> Now cURL is a command line tool for getting or sending files using URL syntax.</h3> <br />
 
 <h3> <b>About libcURL </b> </h3> <br /> 
-<h3> 
-	Libcurl is a free client-side URL transfer library, supporting <b> FTP, FTPS, Gopher, HTTP, 
-	HTTPS, SCP, SFTP, TFTP, Telnet, DICT, the file URI scheme, LDAP, LDAPS, IMAP, POP3, SMTP and RTSP </b>. 
-	The library supports HTTPS certificates, HTTP POST, HTTP PUT, FTP uploading, Kerberos, HTTP 
-	form-based upload, proxies, cookies, user-plus-password authentication, file transfer resume, 
-	and HTTP proxy tunneling.
-</h3> 
+
+Libcurl is a free client-side URL transfer library, supporting <b> FTP, FTPS, Gopher, HTTP, 
+HTTPS, SCP, SFTP, TFTP, Telnet, DICT, the file URI scheme, LDAP, LDAPS, IMAP, POP3, SMTP and RTSP </b>. 
+The library supports HTTPS certificates, HTTP POST, HTTP PUT, FTP uploading, Kerberos, HTTP 
+form-based upload, proxies, cookies, user-plus-password authentication, file transfer resume, 
+and HTTP proxy tunneling.
 <br />
 
 <h3> <b> The relationship between cURL and libcURL </b> </h3> <br />
 				
-<h3> 
-	Since cURL uses libcURL, it supports a range of common Internet protocols, currently including HTTP, 
-	HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, LDAPS, DICT, TELNET, FILE, IMAP, POP3, SMTP and RTSP. For HarvestAPI,
-	it is under HTTP. 
-</h3> <br />
+Since cURL uses libcURL, it supports a range of common Internet protocols, currently including HTTP, 
+HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, LDAPS, DICT, TELNET, FILE, IMAP, POP3, SMTP and RTSP. For HarvestAPI,
+it is under HTTP. 
+<br />
 
 {% highlight PHP%}
 
@@ -90,9 +87,9 @@ categories: jekyll update
 	<li> $data - is set by default as 'false' unless otherwise. </li>					
 </ul>				
 <br />
-<h3>
-	In line 7, `curl_init()` is used to initialize a cURL session. <br /><br />
-	`curl_setopt` is used to set an option for a cURL transfer. It takes 3 parameters, in our case it would be 
-	`curl_init()` which is defined as the variable $curl, a cURL option which are shown in each case of switch
-	and a value which can be any variable or number.
-</h3> <br/>
+
+In line 7, `curl_init()` is used to initialize a cURL session. <br /><br />
+`curl_setopt` is used to set an option for a cURL transfer. It takes 3 parameters, in our case it would be 
+`curl_init()` which is defined as the variable $curl, a cURL option which are shown in each case of switch
+and a value which can be any variable or number.
+<br/>
