@@ -17,12 +17,12 @@ We would also need to get familiar with cURL as well along the way.
 <br/>
 
 <h3> <b> About cURL  </b> </h3> <br /> 
-Now cURL is a command line tool for getting or sending files using URL syntax. <br />
+Now cURL is a command line tool for getting or sending files using URL syntax. <br /><br/>
 
 <h3> <b>About libcURL </b> </h3> <br /> 
 
-Libcurl is a free client-side URL transfer library, supporting <b> FTP, FTPS, Gopher, HTTP, 
-HTTPS, SCP, SFTP, TFTP, Telnet, DICT, the file URI scheme, LDAP, LDAPS, IMAP, POP3, SMTP and RTSP </b>. 
+Libcurl is a free client-side URL transfer library, supporting FTP, FTPS, Gopher, HTTP, 
+HTTPS, SCP, SFTP, TFTP, Telnet, DICT, the file URI scheme, LDAP, LDAPS, IMAP, POP3, SMTP and RTSP. 
 The library supports HTTPS certificates, HTTP POST, HTTP PUT, FTP uploading, Kerberos, HTTP 
 form-based upload, proxies, cookies, user-plus-password authentication, file transfer resume, 
 and HTTP proxy tunneling.
