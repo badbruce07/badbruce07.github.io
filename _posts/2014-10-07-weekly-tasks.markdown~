@@ -95,5 +95,5 @@ and a value which can be any variable or number.
 <br/>
 
 You have the option to be a user of HarvestAPI simply by going to 
-`<a href="http://harvestdata.herokuapp.com/user/register"> HarvestAPI</a>`	
-and click the sign up tab. Once registered, you can use your username and password to replace "username:password" in line 29.
+<a href="http://harvestdata.herokuapp.com/user/register"> HarvestAPI</a>	
+and click the sign up tab. Once registered, you can use your username and password to replace `username:password` in line 29.
