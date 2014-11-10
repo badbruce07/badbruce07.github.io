@@ -124,3 +124,7 @@ Its view looks a lot like this:
 ![My helpful screenshot]({{ site.url }}/assets/harvest768-view2.png)
 <br/><br/>
 ![My helpful screenshot]({{ site.url }}/assets/harvest768-view3.png)
+<br/><br/>
+![My helpful screenshot]({{ site.url }}/assets/harvest768-view4.png)
+<br/><br/>
+![My helpful screenshot]({{ site.url }}/assets/harvest768-view5.png)
