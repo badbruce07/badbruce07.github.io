@@ -9,3 +9,7 @@ On Wednesday October 8, 2014 I continued working on HarvestAPI with PHP. Used th
 and did a search to show me some of the results in a table. <br/>
 
 <h2> <b> Navigating Through Crops Using HarvestAPI </b> </h2> 
+<br/>
+
+<h3> <b> Going Through Crops Endpoint </b> </h3>
+You can check out the crops endpoint at: <a href="http://harvestdata.herokuapp.com/crops/"> HarvestAPI Crops </a>
