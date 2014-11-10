@@ -44,7 +44,7 @@ On November 6, 2014, I worked on the media min-width size for each device. One e
         line-height: 50px;
         color: #fff;
         background-color: rgba(0, 0, 0, 0.1); 
-    }
+	}
    
     
    #header_col{
@@ -58,11 +58,11 @@ On November 6, 2014, I worked on the media min-width size for each device. One e
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-    }
+	}
     
-    .navbar-default .navbar-nav>.active>a {
-    	border-radius: 3px;
-    }
+	.navbar-default .navbar-nav>.active>a {
+		border-radius: 3px;
+ 	}
 
 	.navbar-default.navbar-shrink {
    	padding: 10px 0;
