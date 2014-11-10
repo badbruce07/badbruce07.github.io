@@ -84,3 +84,12 @@ fact a field in crops endpoint and is seen again in line 27 in our form. The aim
 list with the fields in the table. <br/>
 In lines 11-12 a variable called $crops and it is equivalent to CallAPI function that has 3 parameters. 
 If you recall the CallAPI function that was in CallHarvestAPI.php the parameters include:
+<ul>
+	<li> $method = 'GET' </li>
+	<li> $url = 'harvestdata.herokuapp.com/crops/'</li>
+	<li> $data = array('search'=>$cropname, 'ordering'=>'-plant_date') </li>
+</ul>
+<br/>
+NB. For the $data variable, you can use any variable name such as common_name, farm, farm_id, parish.	<br/>
+`Crops Endpoint` consists of field names such as `{"crop_name", "common_name", "estimated_vol", "variety, "plant_date", "count",
+"area", "status", "exp_date", "farm"}`.

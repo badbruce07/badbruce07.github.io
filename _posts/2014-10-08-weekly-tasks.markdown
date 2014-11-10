@@ -89,3 +89,8 @@ If you recall the CallAPI function that was in CallHarvestAPI.php the parameters
 	<li> $url = 'harvestdata.herokuapp.com/crops/'</li>
 	<li> $data = array('search'=>$cropname, 'ordering'=>'-plant_date') </li>
 </ul>
+<br/>
+NB. For the $data variable, you can use any variable name such as common_name, farm, farm_id, parish.	<br/>
+`Crops Endpoint` consists of field names such as `{"crop_name", "common_name", "estimated_vol", "variety, "plant_date", "count",
+"area", "status", "exp_date", "farm"}`. Also, the ordering is done by plant_date in descending order since there is a (-) before 
+the term `plant_date`.
