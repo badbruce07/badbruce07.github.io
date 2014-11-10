@@ -8,7 +8,7 @@ categories: jekyll update
 <h2> Getting Connected with HarvestAPI </h2>
 <br/><br/>
 
-<b> <h3> How to Create The PHP file to connect to HarvestAPI <h3> </b> <br /> 
+<h3> <b> How to Create The PHP file to connect to HarvestAPI </b> <h3> <br /> 
 
 <h3> Now we are at the stage where we need to create a PHP file that will enable connection to HarvestAPI. 
 	  If you are familiar with PHP we can proceed, otherwise check out PHP tutorials at this link: 
