@@ -120,3 +120,10 @@ Look at the table below: <br/>
 						
 As shown above the foreach() loop in line 51 takes care of each row that has details regarding the crop name 
 (take a look at the URL locator and you will see `crop_name=Potato`)
+<br/><br/><br/>
+
+<h2> <b> Navigating Through Prices Using HarvestAPI </b> </h2> 
+<br/>
+
+<h3> <b> Going Through Prices Endpoint </b> </h3>
+You can check out the crops endpoint at: <a href="http://harvestdata.herokuapp.com/prices/"> HarvestAPI Prices </a> <br/>
