@@ -107,3 +107,12 @@ the term `plant_date`.
 	<li>
 		In line 20, <b> $crops_dem </b> gets the crops from results.				  	
 	</li>
+	<li>
+		In lines 23-29, a form was created and a navigation was done by Crop Name. Of course the name must match 
+		<b><u>crop_name</u></b>, which is the value we are trying to get to print the rest of details of our choice.
+	</li>
+</ul>
+<br/>
+Tables are created so that the results can be seen there and we have a foreach() loop to print the fields of our choice. <br/>
+Look at the table below: <br/>
+![My helpful screenshot]({{ site.url }}/assets/screenshot_crops.png)

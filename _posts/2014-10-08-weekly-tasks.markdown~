@@ -97,7 +97,8 @@ the term `plant_date`.
 
 <ul>
 	<li>
-		In line 14, <b> <u>json_decode</u> </b> is used to decode a JSON string and then it becomes a PHP variable <b> $crop_objects. </b>
+		In line 14, <b> <u>json_decode</u> </b> is used to decode a JSON string and then it becomes a PHP variable 
+		<b> $crop_objects. </b>
 	</li>
 	<li>
 		In line 16, <b> $num_crops </b> keeps a count of the number of crops.				  	
@@ -106,3 +107,11 @@ the term `plant_date`.
 	<li>
 		In line 20, <b> $crops_dem </b> gets the crops from results.				  	
 	</li>
+	<li>
+		In lines 23-29, a form was created and a navigation was done by Crop Name. Of course the name must match 
+		<b><u>crop_name</u></b>, which is the value we are trying to get to print the rest of details of our choice.
+	</li>
+</ul>
+<br/>
+Tables are created so that the results can be seen there and we have a foreach() loop to print the fields of our choice. <br/>
+Look at the table below: <br/>
