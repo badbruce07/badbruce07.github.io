@@ -218,7 +218,7 @@ Livestock Endpoint consists of field names such as `{"price", "public", "price_p
 "units", "variety", "batch_date", "published_on", "extension"}`. Also, the ordering is done by price in ascending order.
 
 <ul>
-	<li>In line 14, json_decode is used to decode a JSON string and then it becomes a PHP variable <b> $price_objects </b>.	</li>
+	<li> In line 14, json_decode is used to decode a JSON string and then it becomes a PHP variable <b> $price_objects </b>.	</li>
 	<li> In line 16, <b> $num_prices </b> keeps a count of the number of livestock. </li>
 	<li> In line 20, <b> $prices_dem </b> gets the livestock from results. </li>
 	<li> In lines 23-29, a form was created and a navigation was done by Commodity. Of course the name must match 

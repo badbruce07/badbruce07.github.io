@@ -79,7 +79,7 @@ foreach($crops_dem as $crop)
 {% endhighlight %}
 
 <br/><br/>
-From the above snippet called `Crops.php`, in line 11, we used an include function which calls back the `CallHarvestAPI.php` 
+From the above snippet called `Crops.php`, in line 11, I used an include function which calls back the `CallHarvestAPI.php` 
 snippet. On line 8 we created a variable name  called <b> $cropname </b> which defines `$_GET['crop_name']`. The variable 
 `crop_name` is in fact a field in crops endpoint and is seen again in line 27 in our form. The aim is to search for a crop name 
 to display a list with the fields in the table. <br/>
