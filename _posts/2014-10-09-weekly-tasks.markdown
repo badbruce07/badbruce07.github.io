@@ -138,7 +138,7 @@ I created a connection to HarvestAPI utilizing both PHP and cURL called CallHarv
 		
 	// call farms resource to return string
 	$farms = CallAPI('GET', 'harvestdata.herokuapp.com/farms/', 
-					array('search'=> $parish, 'ordering'=> 'extension'));
+				array('search'=> $parish, 'ordering'=> 'extension'));
 
 	//convert JSON string to PHP variable (object)
 	$farm_objects = json_decode($farms);
