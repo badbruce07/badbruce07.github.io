@@ -12,3 +12,11 @@ and did a search to show me some of the results in a table. <br/>
 <br/>
 
 <h3> <b> Going Through Farmers Endpoint </b> </h3>
+You can check out the crops endpoint at: <a href="http://harvestdata.herokuapp.com/farmers/"> HarvestAPI Farms </a>
+
+<h3> <b> Accessing The Farmers Data Through a PHP Snippet </b> </h3> 
+Now you can access the data with any platform of your choice, but for me I will be using PHP especially since
+from the previous page I created a connection to HarvestAPI utilizing both PHP and cURL called `CallHarvestAPI.php`. 
+You can see a view of the snippet below: 
+<br/><br/>
+
