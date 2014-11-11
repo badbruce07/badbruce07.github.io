@@ -21,14 +21,26 @@ You can see a view of the snippet below:
 
 {% highlight PHP %}
 <?php
-		include("CallHarvestAPI.php");
+	include("CallHarvestAPI.php");
 
-		/*---------------------------------------------------------------------------*/
-		/*------------------------ Livestock Details --------------------------------*/
-		/*---------------------------------------------------------------------------*/
+	/*---------------------------------------------------------------------------*/
+	/*------------------------ Livestock Details --------------------------------*/
+	/*---------------------------------------------------------------------------*/
 		
-		$live_name = $_GET['livestock_name'];
+	$live_name = $_GET['livestock_name'];
 
-		// call livestock resource to return string
-		$livestocks = CallAPI('GET', 'harvestdata.herokuapp.com/livestock/',
-					array('search'=>$live_name, 'ordering'=>'capacity'));
+	// call livestock resource to return string
+	$livestocks = CallAPI('GET', 'harvestdata.herokuapp.com/livestock/',
+				array('search'=>$live_name, 'ordering'=>'capacity'));
+	
+	//convert JSON string to PHP variable (object)
+	$livestock_objects = json_decode($livestocks);
+			
+	$num_livestocks = $livestock_objects -> count;
+	$next_page_livestock_url = $livestock_objects -> next;
+			
+	//getting the actual livestock from results
+	$livestocks_dem = $livestock_objects -> results;
+?>	
+			
+{% endhighlight %}
