@@ -222,4 +222,11 @@ Livestock Endpoint consists of field names such as `{"price", "public", "price_p
 	<li> In line 21, <b> $prices_dem </b> gets the livestock from results. </li>
 	<li> In lines 24-29, a form was created and a navigation was done by Commodity. Of course the name must match 
 		  <b><u>commodity</u></b>, which is the value we are trying to get to print the rest of details of our choice. </li>
-</ul>				
+</ul>		
+Tables are created so that the results can be seen there and we have a foreach() loop to print the fields of our choice.
+Look at the table below: <br/>	
+![My helpful screenshot]({{ site.url }}/assets/screenshot_prices.png)
+<br/><br/>
+
+As shown above the foreach() loop in line 43 takes care of each row that has details regarding the livestock name (take a 
+look at the URL locator and you will see `commodity=Dasheen`)	
