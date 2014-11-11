@@ -77,4 +77,31 @@ You can see a view of the snippet below:
 From the above snippet called `Livestock.php`, in line 2, I used an include function which calls back the `CallHarvestAPI.php` 
 snippet. On line 7 we created a variable name called <b> $live_name </b> which defines `$_GET['livestock_name']`. The variable 
 'livestock_name' is in fact a field in livestock endpoint and is seen again in line 26 in our form. The aim is to 
-search for a livestock name to display a list with the fields in the table.					
+search for a livestock name to display a list with the fields in the table.
+<br/>
+In lines 18-19 a variable called $livestocks and it is equivalent to CallAPI function that has 3 parameters. If you recall 
+the CallAPI function that was in CallHarvestAPI.php the parameters include:
+<ul>
+	<li> $method = 'GET' </li>
+	<li> $url = 'harvestdata.herokuapp.com/livestock/'</li>
+	<li> $data = array('search'=>$live_name, 'ordering'=>'capacity') </li>
+</ul>
+<br/>
+NB. For the $data variable, you can only search by livestock_name. Livestock Endpoint consists of field names such as 
+`{"livestock_name", "count", "capacity", "stage", "farm"}`. Also, the ordering is done by capacity in ascending order.
+
+<ul>
+	<li>
+		In line 14, json_decode is used to decode a JSON string and then it becomes a PHP variable <b> $livestock_objects </b>.				  	
+	</li>
+	<li>
+		In line 16, <b> $num_livestocks </b> keeps a count of the number of livestock.				  	
+	</li>
+	<li>
+		In line 20, <b> $livestocks_dem </b> gets the livestock from results.				  	
+	</li>
+	<li>
+		In lines 23-28, a form was created and a navigation was done by Livestock Name. Of course the name must match 
+		'livestock_name', which is the value we are trying to get to print the rest of details of our choice. 
+	</li>
+</ul>

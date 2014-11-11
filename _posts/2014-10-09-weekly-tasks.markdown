@@ -80,7 +80,7 @@ In line 7 we created a variable name called <b> $first_name </b> which defines `
 is in fact a field in farmers endpoint and is seen again in line 26 in our form. The aim is to search for a parish to display a 
 list with the fields in the table. 
 <br/>
-In lines 10-11 a variable called $crops and it is equivalent to CallAPI function that has 3 parameters. If you recall the CallAPI 
+In lines 10 a variable called $farmers and it is equivalent to CallAPI function that has 3 parameters. If you recall the CallAPI 
 function that was in CallHarvestAPI.php the parameters include:
 <ul>
 	<li> $method = 'GET' </li>
@@ -188,7 +188,7 @@ In line 7 we created a variable name called <b> $parish </b> which defines `$_GE
 a field in farms endpoint and is seen again in line 26 in our form. The aim is to search for a parish to display a list with the 
 fields in the table.
 <br/>
-In lines 10 a variable called $crops and it is equivalent to CallAPI function that has 3 parameters. 
+In lines 10 a variable called $farms and it is equivalent to CallAPI function that has 3 parameters. 
 If you recall the CallAPI function that was in CallHarvestAPI.php the parameters include:
 <ul>
 	<li> $method = 'GET' </li>
