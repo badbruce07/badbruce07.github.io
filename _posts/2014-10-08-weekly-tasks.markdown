@@ -118,7 +118,7 @@ Look at the table below: <br/>
 ![My helpful screenshot]({{ site.url }}/assets/screenshot_crops.png)
 <br /> <br />
 						
-As shown above the foreach() loop in line 51 takes care of each row that has details regarding the crop name 
+As shown above the foreach() loop in line 41 takes care of each row that has details regarding the crop name 
 (take a look at the URL locator and you will see `crop_name=Potato`)
 <br/><br/><br/>
 
@@ -178,24 +178,23 @@ You can see a view of the snippet below:
 			
 <?php 
 			
-	foreach($prices_dem as $price)
-	{	
-		echo '<tr>
-					<td>'.$price -> price.'</td>
-					<td>'.$price -> commodity. '</td>
-					<td>'.$price -> parish. '</td>
-					<td>'.$price -> batch_date. '</td>
-					<td>'.$price -> published_on. '</td>
-				</tr>';
-	}
+foreach($prices_dem as $price)
+{	
+	echo '<tr>
+				<td>'.$price -> price.'</td>
+				<td>'.$price -> commodity. '</td>
+				<td>'.$price -> parish. '</td>
+				<td>'.$price -> batch_date. '</td>
+				<td>'.$price -> published_on. '</td>
+			</tr>';
+}
 			
-	/*---------------------------/////////////////////////////--------------------------------*/
-	/*------------------------------- End of Price Details -----------------------------------*/
-	/*--------------------------//////////////////////////////--------------------------------*/			
+/*---------------------------/////////////////////////////--------------------------------*/
+/*------------------------------- End of Price Details -----------------------------------*/
+/*--------------------------//////////////////////////////--------------------------------*/			
 			
 ?>
 </table>
-
 {% endhighlight %}
 
 From the above snippet called `Prices.php`, in line 2, we used an include function which calls back the `CallHarvestAPI.php` 
@@ -217,10 +216,10 @@ Livestock Endpoint consists of field names such as `{"price", "public", "price_p
 "units", "variety", "batch_date", "published_on", "extension"}`. Also, the ordering is done by price in ascending order.
 
 <ul>
-	<li>In line 15, json_decode is used to decode a JSON string and then it becomes a PHP variable <b> $price_objects </b>.	</li>
-	<li> In line 17, <b> $num_prices </b> keeps a count of the number of livestock. </li>
-	<li> In line 21, <b> $prices_dem </b> gets the livestock from results. </li>
-	<li> In lines 24-29, a form was created and a navigation was done by Commodity. Of course the name must match 
+	<li>In line 14, json_decode is used to decode a JSON string and then it becomes a PHP variable <b> $price_objects </b>.	</li>
+	<li> In line 16, <b> $num_prices </b> keeps a count of the number of livestock. </li>
+	<li> In line 20, <b> $prices_dem </b> gets the livestock from results. </li>
+	<li> In lines 23-29, a form was created and a navigation was done by Commodity. Of course the name must match 
 		  <b><u>commodity</u></b>, which is the value we are trying to get to print the rest of details of our choice. </li>
 </ul>		
 Tables are created so that the results can be seen there and we have a foreach() loop to print the fields of our choice.
@@ -228,5 +227,5 @@ Look at the table below: <br/>
 ![My helpful screenshot]({{ site.url }}/assets/screenshot_prices.png)
 <br/><br/>
 
-As shown above the foreach() loop in line 43 takes care of each row that has details regarding the livestock name (take a 
+As shown above the foreach() loop in line 41 takes care of each row that has details regarding the livestock name (take a 
 look at the URL locator and you will see `commodity=Dasheen`)	

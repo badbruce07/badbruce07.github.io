@@ -95,16 +95,16 @@ is done by the last name in ascending order.
 
 <ul>
 	<li> 
-		In line 13, json_decode is used to decode a JSON string and then it becomes a PHP variable  <b>$farmer_objects</b>. 
+		In line 14, json_decode is used to decode a JSON string and then it becomes a PHP variable  <b>$farmer_objects</b>. 
 	</li>
 	<li> 
-		In line 15, <b>$num_farmers</b> keeps a count of the number of farmers. 
+		In line 16, <b>$num_farmers</b> keeps a count of the number of farmers. 
 	</li>
 	<li> 
-		In line 19, <b> $fama_dem </b> gets the farmers from results.	
+		In line 20, <b> $fama_dem </b> gets the farmers from results.	
 	</li>
 	<li>
-		In lines 22-27, a form was created and a navigation was done by First Name. Of course the name must match 
+		In lines 23-29, a form was created and a navigation was done by First Name. Of course the name must match 
 		<b><u>first_name</u></b>, which is the value we are trying to get to print the rest of details of our choice. 
 	</li>
 </ul>
@@ -113,3 +113,6 @@ Tables are created so that the results can be seen there and we have a foreach()
 Look at the table below: <br/>
 
 ![My helpful screenshot]({{ site.url }}/assets/screenshot_farmers.png)
+<br/><br/>
+As shown above the foreach() loop in line 41 takes care of each row that has details regarding the first name (take a look at 
+the URL locator and you will see `first_name=Clover`)
