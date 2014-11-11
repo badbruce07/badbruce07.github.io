@@ -7,6 +7,10 @@ categories: jekyll update
 <h1> <b> What is HarvestAPI? </b> </h1>
 HarvestAPI is an open-data platform for sharing of agriculture sector information. 
 <br/> <br/>
+
+<h1> <b> What does HarvestAPI give you? </b> </h1>
+HarvestAPI gives you on-demand access to the information that powers the agriculture industry.
+<br/><br/>
 On October 6, 2014, I started learning PHP with cURL which was very useful to connect PHP with HarvestAPI. 
 I had to also install curl in the terminal using the command below:
 <br/><br/>
