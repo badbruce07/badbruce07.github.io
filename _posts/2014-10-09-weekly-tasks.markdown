@@ -40,8 +40,7 @@ You can see a view of the snippet below:
 	$next_page_url  = $farmer_objects->next;
 		
 	//now get the actual farmers from results
-	$fama_dem = $farmer_objects->results;
-		
+	$fama_dem = $farmer_objects->results;		
 ?>
 		
 <form action="farmers.php" method="get">
@@ -93,3 +92,19 @@ NB. For the $data variable, you can use any variable name such as `first_name`, 
 Farmers endpoint consists of field names such as `{"url", "farmer_id", "farmer_id", "first_name", "last_name", "alias", 
 "res_address", "res_parish", "tel_number", "cell_number", "verified_status", "dob", "agri_activity", "owner"}`. Also, the ordering 
 is done by the last name in ascending order.
+
+<ul>
+	<li> 
+		In line 13, json_decode is used to decode a JSON string and then it becomes a PHP variable  <b>$farmer_objects</b>. 
+	</li>
+	<li> 
+		In line 15, <b>$num_farmers</b> keeps a count of the number of farmers. 
+	</li>
+	<li> 
+		In line 19, <b> $fama_dem </b> gets the farmers from results.	
+	</li>
+	<li>
+		In lines 32-36, a form was created and a navigation was done by First Name. Of course the name must match 
+						'first_name', which is the value we are trying to get to print the rest of details of our choice. 
+					</li>
+</ul>
