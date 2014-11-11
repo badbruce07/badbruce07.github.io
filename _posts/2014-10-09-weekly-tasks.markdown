@@ -104,7 +104,12 @@ is done by the last name in ascending order.
 		In line 19, <b> $fama_dem </b> gets the farmers from results.	
 	</li>
 	<li>
-		In lines 32-36, a form was created and a navigation was done by First Name. Of course the name must match 
-						'first_name', which is the value we are trying to get to print the rest of details of our choice. 
-					</li>
+		In lines 22-27, a form was created and a navigation was done by First Name. Of course the name must match 
+		<b><u>first_name</u></b>, which is the value we are trying to get to print the rest of details of our choice. 
+	</li>
 </ul>
+<br/>
+Tables are created so that the results can be seen there and we have a foreach() loop to print the fields of our choice.<br />
+Look at the table below: <br/>
+
+![My helpful screenshot]({{ site.url }}/assets/screenshot_farmers.png)
