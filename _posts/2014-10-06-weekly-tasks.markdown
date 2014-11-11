@@ -9,7 +9,13 @@ HarvestAPI is an open-data platform for sharing of agriculture sector informatio
 <br/> <br/>
 
 <h1> <b> What does HarvestAPI give you? </b> </h1>
-HarvestAPI gives you on-demand access to the information that powers the agriculture industry.
+HarvestAPI gives you on-demand access to the information that powers the agriculture industry. Some of the features that HarvestAPI
+provide are:
+<ul>
+	<li> Producer Information </li>
+	<li> Weekly Price Data </li>
+	<li> Agriculture Production Data </li>
+</ul>
 <br/><br/>
 On October 6, 2014, I started learning PHP with cURL which was very useful to connect PHP with HarvestAPI. 
 I had to also install curl in the terminal using the command below:
