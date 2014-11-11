@@ -214,3 +214,6 @@ Tables are created so that the results can be seen there and we have a foreach()
 Look at the table below: <br/>
 ![My helpful screenshot]({{ site.url }}/assets/screenshot_farms.png)
 <br/><br/>
+
+As shown above the foreach() loop in line 41 takes care of each row that has details regarding the parish name 
+(take a look at the URL locator and you will see `parish=Trelawny`)
