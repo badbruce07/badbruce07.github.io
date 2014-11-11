@@ -29,6 +29,17 @@ provide are:
 </ul>
 <br/><br/>
 
+<h1> <b> Who should use it? </b> </h1>
+<ul>	
+	<li> Rural Agricultural Development Authority (RADA) </li>
+	<li> Mona School of Business & Management (MSBN) </li>
+	<li> Code For The Caribbean </li>
+	<li> Slashroots Foundation </li>
+	<li> The Caribbean Open Institute </li>
+	<li> International Development Research Centre (IDRC|CRDI) </li>
+</ul>
+<br/><br/>
+
 On October 6, 2014, I started learning PHP with cURL which was very useful to connect PHP with HarvestAPI. 
 I had to also install curl in the terminal using the command below:
 <br/><br/>
@@ -47,6 +58,3 @@ sudo service apache2 restart
 <br/><br/>
 
 ![My helpful screenshot]({{ site.url }}/assets/first_install2.png)
-
-<br/><br/>
- I also navigate through the various endpoints of HarvestAPI.
