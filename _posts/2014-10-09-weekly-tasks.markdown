@@ -31,7 +31,7 @@ You can see a view of the snippet below:
 
 	//call farmers resource to return string
 	$farmers = CallAPI('GET', 'harvestdata.herokuapp.com/farmers/', 
-							array('search'=>$first_name, 'ordering'=>'last_name'));
+					array('search'=>$first_name, 'ordering'=>'last_name'));
 		
 	//convert JSON string to PHP variable (object)
 	$farmer_objects = json_decode($farmers);
