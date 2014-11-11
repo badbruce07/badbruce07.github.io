@@ -82,7 +82,7 @@ From the above snippet called `Crops.php`, in line 11, we used an include functi
 snippet. On line 8 we created a variable name  called <b> $cropname </b> which defines `$_GET['crop_name']`. The variable 
 `crop_name` is in fact a field in crops endpoint and is seen again in line 27 in our form. The aim is to search for a crop name 
 to display a list with the fields in the table. <br/>
-In lines 11-12 a variable called $crops and it is equivalent to CallAPI function that has 3 parameters. 
+In lines 11-12 a variable called <b>$crops</b> and it is equivalent to CallAPI function that has 3 parameters. 
 If you recall the CallAPI function that was in CallHarvestAPI.php the parameters include:
 <ul>
 	<li> $method = 'GET' </li>
@@ -198,7 +198,20 @@ You can see a view of the snippet below:
 
 {% endhighlight %}
 
-From the above snippet called `Prices.php`, in line 9, we used an include function which calls back the `CallHarvestAPI.php` 
-snippet. On line 15 we created a variable name called <b> $commodity </b> which defines `$_GET['commodity']`. The variable 
-`commodity` is in fact a field in prices endpoint and is seen again in line 35 in our form. The aim is to search for a commodity 
-name to display a list with the fields in the table.					
+From the above snippet called `Prices.php`, in line 2, we used an include function which calls back the `CallHarvestAPI.php` 
+snippet. On line 8 we created a variable name called <b> $commodity </b> which defines `$_GET['commodity']`. The variable 
+`commodity` is in fact a field in prices endpoint and is seen again in line 27 in our form. The aim is to search for a commodity 
+name to display a list with the fields in the table.
+<br/>
+In lines 11 a variable called <b> $prices </b> and it is equivalent to CallAPI function 
+that has 3 parameters. If you recall the CallAPI function that was in CallHarvestAPI.php the parameters include:
+<br/>
+<ul>
+	<li> $method = 'GET' </li>
+	<li> $url = 'harvestdata.herokuapp.com/prices/'</li>
+	<li> $data = array('search'=>$commodity, 'ordering'=>'price') </li>
+</ul>
+<br/>
+NB. For the $data variable, you can search by `commodity`, `crop_code`, `price_point`, `extension` and `parish`.	
+Livestock Endpoint consists of field names such as `{"price", "public", "price_point", "parish", "commodity", "crop_code", 
+"units", "variety", "batch_date", "published_on", "extension"}`. Also, the ordering is done by price in ascending order.				
