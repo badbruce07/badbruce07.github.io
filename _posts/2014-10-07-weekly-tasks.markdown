@@ -1,12 +1,27 @@
 ---
 layout: post
-title:  "Tutorials in Using HarvestAPI in PHP (Pt. 2)"
+title:  "Tutorials in Using HarvestAPI in PHP (Pt. 1)"
 date:   2014-10-07 11:31:00
 categories: jekyll update
 ---
 
 <h2> <b> Getting Connected with HarvestAPI </b> </h2>
 <br/>
+
+I started learning PHP with cURL which was very useful to connect PHP with HarvestAPI. I will be using Linux/Ubuntu Operating
+System. I had to also install curl in the terminal using the command below:
+<br/><br/>
+{% highlight ruby %}
+sudo apt-get install php5-curl
+{% endhighlight %} 
+
+<br/><br/>
+and then restart the server using the command: <br/><br/>
+
+{% highlight ruby %}
+sudo service apache2 restart
+{% endhighlight %} 
+<br/><br/>
 
 <h3> <b> How to Create The PHP file to connect to HarvestAPI </b> </h3>  
 

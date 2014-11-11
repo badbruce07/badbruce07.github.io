@@ -1,11 +1,19 @@
 ---
 layout: post
-title:  "Tutorials in Using HarvestAPI in PHP (Pt. 2)"
+title:  "Tutorials in Using HarvestAPI in PHP (Pt. 1)"
 date:   2014-10-07 11:31:00
 categories: jekyll update
 ---
 
 <h2> <b> Getting Connected with HarvestAPI </b> </h2>
+<br/>
+
+I started learning PHP with cURL which was very useful to connect PHP with HarvestAPI. I will be using Linux/Ubuntu Operating
+System. I had to also install curl in the terminal using the command below:
+<br/><br/>
+{% highlight ruby %}
+sudo apt-get install php5-curl
+{% endhighlight %} 
 <br/>
 
 <h3> <b> How to Create The PHP file to connect to HarvestAPI </b> </h3>  
@@ -82,7 +90,7 @@ it is under HTTP.
 <br/><br/>
 Now shown above is a PHP snippet (let's call it CallHarvestAPI.php) containing a function which takes 3 parameters.
 <ul>
-	<li> $method - This is used to determine whether you are trying to `GET`, `POST`, `PUT`, etc. </li>
+	<li> $method - This is used to determine whether you are trying to GET, POST, PUT, etc. </li>
 	<li> $url - This is referring to the HTTP site that you are using, in this case the HarvestAPI url. </li>
 	<li> $data - is set by default as <b>false</b> unless otherwise. </li>					
 </ul>				
