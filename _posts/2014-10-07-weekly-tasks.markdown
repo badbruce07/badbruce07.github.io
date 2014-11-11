@@ -113,5 +113,5 @@ You have the option to be a user of HarvestAPI simply by going to
 <a href="http://harvestdata.herokuapp.com/user/register"> HarvestAPI</a>	
 and click the sign up tab. Once registered, you can use your username and password to replace `username:password` in line 29.
 <br/>
-In line 34, `curl_exec()` performs the cURL session $curl and stores it in a varible called $result. <br/>
-In line 36, `curl_close()` closes the cURL session and in line 37, the $result is returned.	
+In line 34, `curl_exec()` performs the cURL session $curl and stores it in a varible called <b>$result.</b> <br/>
+In line 36, `curl_close()` closes the cURL session and in line 37, the <b>$result</b> is returned.	

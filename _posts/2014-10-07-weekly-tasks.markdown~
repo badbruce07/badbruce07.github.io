@@ -47,7 +47,7 @@ and HTTP proxy tunneling. (from <a>http://en.wikipedia.org/wiki/CURL</a>)
 				
 Since cURL uses libcURL, it supports a range of common Internet protocols, currently including HTTP, 
 HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, LDAPS, DICT, TELNET, FILE, IMAP, POP3, SMTP and RTSP. For HarvestAPI,
-it is under HTTP. 
+it is under HTTP. (from <a>http://en.wikipedia.org/wiki/CURL</a>)
 <br /> <br/>
 
 {% highlight PHP%}
