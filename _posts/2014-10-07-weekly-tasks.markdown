@@ -101,7 +101,6 @@ Now shown above is a PHP snippet (let's call it CallHarvestAPI.php) containing a
 	<li> $url - This is referring to the HTTP site that you are using, in this case the HarvestAPI url. </li>
 	<li> $data - is set by default as <b>false</b> unless otherwise. </li>					
 </ul>				
-<br />
 
 In line 7, `curl_init()` is used to initialize a cURL session. <br />
 `curl_setopt` is used to set an option for a cURL transfer. It takes 3 parameters, in our case it would be 

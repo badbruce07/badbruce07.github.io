@@ -137,64 +137,68 @@ You can see a view of the snippet below:
 {% highlight PHP %}
 
 <?php
-		include("CallHarvestAPI.php");
+	include("CallHarvestAPI.php");
 
-		/*---------------------------------------------------------------------------------------*/
-		/*-------------------------------- Livestock Details ------------------------------------*/
-		/*---------------------------------------------------------------------------------------*/
+	/*---------------------------------------------------------------------------------------*/
+	/*-------------------------------- Livestock Details ------------------------------------*/
+	/*---------------------------------------------------------------------------------------*/
 		
-		$commodity = $_GET['commodity'];
+	$commodity = $_GET['commodity'];
 
-		// call price resource to return string
-		$prices = CallAPI('GET', 'harvestdata.herokuapp.com/prices/',
-					array('search'=> $commodity, 'ordering'=>'price'));
+	// call price resource to return string
+	$prices = CallAPI('GET', 'harvestdata.herokuapp.com/prices/',
+				array('search'=> $commodity, 'ordering'=>'price'));
 					
-		//convert JSON string to PHP variable (object)
-		$price_objects = json_decode($prices);
+	//convert JSON string to PHP variable (object)
+	$price_objects = json_decode($prices);
 			
-		$num_prices = $price_objects -> count;
-		$next_page_price_url = $price_objects -> next;
+	$num_prices = $price_objects -> count;
+	$next_page_price_url = $price_objects -> next;
 			
-		//getting the actual prices from results
-		$prices_dem = $price_objects -> results;
-		
-	?>
+	//getting the actual prices from results
+	$prices_dem = $price_objects -> results;
+?>
 	
-		<form action="prices.php" method="get">
-			<fieldset>
-				<legend> Search By Commodity Name </legend>
-				Commodity: <input type="text" name = "commodity"/> <input type="submit"/>		
-			</fieldset>
-		</form>
-		<br />
-		<br />
-		<table>
-			<tr>
-				<td> Price </td>
-				<td> Commodity </td>	
-				<td> Parish </td>
-				<td> Batch Date </td>
-				<td> Published On </td>
-			</tr>
+<form action="prices.php" method="get">
+	<fieldset>
+		<legend> Search By Commodity Name </legend>
+		Commodity: <input type="text" name = "commodity"/> <input type="submit"/>		
+	</fieldset>
+	</form>
+	<br />
+	<br />
+	<table>
+		<tr>
+			<td> Price </td>
+			<td> Commodity </td>	
+			<td> Parish </td>
+			<td> Batch Date </td>
+			<td> Published On </td>
+		</tr>
 			
-			<?php 
+<?php 
 			
-			foreach($prices_dem as $price)
-			{	
-				echo '<tr>
+	foreach($prices_dem as $price)
+	{	
+		echo '<tr>
 					<td>'.$price -> price.'</td>
 					<td>'.$price -> commodity. '</td>
 					<td>'.$price -> parish. '</td>
 					<td>'.$price -> batch_date. '</td>
 					<td>'.$price -> published_on. '</td>
 				</tr>';
-			}
+	}
 			
-			/*---------------------------/////////////////////////////--------------------------------*/
-			/*------------------------------- End of Price Details -----------------------------------*/
-			/*--------------------------//////////////////////////////--------------------------------*/			
+	/*---------------------------/////////////////////////////--------------------------------*/
+	/*------------------------------- End of Price Details -----------------------------------*/
+	/*--------------------------//////////////////////////////--------------------------------*/			
 			
-			?>
-		</table>
+?>
+	</table>
 
 {% endhighlight %}
+
+From the above snippet called `Prices.php`, in line 9, we used an include function which calls back the `CallHarvestAPI.php` 
+snippet. On line 15 we created a variable name called <b> $commodity </b> which defines `$_GET['commodity']`. The variable 
+`commodity` is in fact a field in prices endpoint and is seen again in line 35 in our form. The aim is to search for a commodity 
+name to display a list with the fields in the table.					
