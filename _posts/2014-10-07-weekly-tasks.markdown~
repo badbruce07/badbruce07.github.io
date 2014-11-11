@@ -40,7 +40,7 @@ Libcurl is a free client-side URL transfer library, supporting FTP, FTPS, Gopher
 HTTPS, SCP, SFTP, TFTP, Telnet, DICT, the file URI scheme, LDAP, LDAPS, IMAP, POP3, SMTP and RTSP. 
 The library supports HTTPS certificates, HTTP POST, HTTP PUT, FTP uploading, Kerberos, HTTP 
 form-based upload, proxies, cookies, user-plus-password authentication, file transfer resume, 
-and HTTP proxy tunneling.
+and HTTP proxy tunneling. (from <a>http://en.wikipedia.org/wiki/CURL</a>)
 <br /> <br/>
 
 <h3> <b> The relationship between cURL and libcURL </b> </h3> 
