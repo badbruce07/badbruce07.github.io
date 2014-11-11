@@ -42,5 +42,11 @@ You can see a view of the snippet below:
 	//getting the actual livestock from results
 	$livestocks_dem = $livestock_objects -> results;
 ?>	
-			
+
+<form action="livestocks.php" method="get">
+	<fieldset>
+		<legend> Search By Livestock Name </legend>
+		Livestock Name: <input type="text" name = "livestock_name"/> <input type="submit"/>		
+	</fieldset>
+</form>			
 {% endhighlight %}

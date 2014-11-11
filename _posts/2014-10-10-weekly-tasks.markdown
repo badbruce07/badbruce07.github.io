@@ -48,5 +48,28 @@ You can see a view of the snippet below:
 		<legend> Search By Livestock Name </legend>
 		Livestock Name: <input type="text" name = "livestock_name"/> <input type="submit"/>		
 	</fieldset>
-</form>			
+</form>
+<br />
+<br />
+<table>
+	<tr>
+		<td> Livestock Name </td>
+		<td> Count </td>	
+		<td> Capacity </td>
+		<td> Stage </td>			
+	</tr>
+		
+<?php 
+	foreach($livestocks_dem as $livestock)
+	{
+		echo '<tr>
+			<td>'.$livestock -> livestock_name.'</td>
+			<td>'.$livestock -> count. '</td>
+			<td>'.$livestock -> capacity. '</td>
+			<td>'.$livestock -> stage. '</td>
+		</tr>';			
+	}
+?>
+</table>
+			
 {% endhighlight %}
