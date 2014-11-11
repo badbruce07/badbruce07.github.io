@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tutorials in Using HarvestAPI in PHP (Pt. 2)"
+title:  "Tutorials in Using HarvestAPI with PHP (Pt. 2)"
 date:   2014-10-08 11:31:00
 categories: jekyll update
 ---

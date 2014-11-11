@@ -1,6 +1,34 @@
 ---
 layout: post
-title:  "Tutorials in Using HarvestAPI in PHP (Pt. 4)"
+title:  "Tutorials in Using HarvestAPI with PHP (Pt. 4)"
 date:   2014-10-10 11:31:00
 categories: jekyll update
 ---
+
+On Friday October 10, 2014 I continued working on HarvestAPI with PHP. Used the endpoint Livestock and did a search to show me 
+some of the results in a table. <br/>
+
+<h2> <b> Navigating Through Livestock Using HarvestAPI </b> </h2> 
+<br/>
+
+You can check out the crops endpoint at: <a href="http://harvestdata.herokuapp.com/livestock/"> HarvestAPI Livestock </a>
+
+<h3> <b> Accessing The Livestock Data Through a PHP Snippet </b> </h3>
+Now you can access the data with any platform of your choice, but for me I will be using PHP especially since from the 
+previous page I created a connection to HarvestAPI utilizing both PHP and cURL called CallHarvestAPI.php. 
+You can see a view of the snippet below:
+<br/><br/>
+
+{% highlight PHP %}
+<?php
+		include("CallHarvestAPI.php");
+
+		/*---------------------------------------------------------------------------*/
+		/*------------------------ Livestock Details --------------------------------*/
+		/*---------------------------------------------------------------------------*/
+		
+		$live_name = $_GET['livestock_name'];
+
+		// call livestock resource to return string
+		$livestocks = CallAPI('GET', 'harvestdata.herokuapp.com/livestock/',
+					array('search'=>$live_name, 'ordering'=>'capacity'));
