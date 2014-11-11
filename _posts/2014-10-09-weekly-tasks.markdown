@@ -75,7 +75,7 @@ You can see a view of the snippet below:
 {% endhighlight %}
 <br/><br/>
 
-From the above snippet called `Farmers.php`, in line 2, we used an include function which calls the `CallHarvestAPI.php` snippet. 
+From the above snippet called `Farmers.php`, in line 2, I used an include function which calls the `CallHarvestAPI.php` snippet. 
 In line 7 we created a variable name called <b> $first_name </b> which defines `$_GET['first_name']`. The variable `first_name` 
 is in fact a field in farmers endpoint and is seen again in line 26 in our form. The aim is to search for a parish to display a 
 list with the fields in the table. 
@@ -183,4 +183,15 @@ foreach($farms_dem as $farm)
 
 {% endhighlight %}
 
-From the above snippet called `Farms.php`, in line 9, we used an include function which calls back the `CallHarvestAPI.php` snippet.
+From the above snippet called `Farms.php`, in line 2, I used an include function which calls back the `CallHarvestAPI.php` snippet.
+In line 7 we created a variable name called <b> $parish </b> which defines `$_GET['parish']`. The variable `parish` is in fact 
+a field in farms endpoint and is seen again in line 26 in our form. The aim is to search for a parish to display a list with the 
+fields in the table.
+<br/>
+In lines 10 a variable called $crops and it is equivalent to CallAPI function that has 3 parameters. 
+If you recall the CallAPI function that was in CallHarvestAPI.php the parameters include:
+<ul>
+	<li> $method = 'GET' </li>
+	<li> $url = 'harvestdata.herokuapp.com/farms/'</li>
+	<li> $data = array('search'=>$parish, 'ordering'=>'-extension') </li>
+</ul>
