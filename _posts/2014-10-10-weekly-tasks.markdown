@@ -73,3 +73,8 @@ You can see a view of the snippet below:
 </table>
 			
 {% endhighlight %}
+
+From the above snippet called `Livestock.php`, in line 2, I used an include function which calls back the `CallHarvestAPI.php` 
+snippet. On line 7 we created a variable name called <b> $live_name </b> which defines `$_GET['livestock_name']`. The variable 
+'livestock_name' is in fact a field in livestock endpoint and is seen again in line 26 in our form. The aim is to 
+search for a livestock name to display a list with the fields in the table.					

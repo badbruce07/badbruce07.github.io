@@ -48,5 +48,33 @@ You can see a view of the snippet below:
 		<legend> Search By Livestock Name </legend>
 		Livestock Name: <input type="text" name = "livestock_name"/> <input type="submit"/>		
 	</fieldset>
-</form>			
+</form>
+<br />
+<br />
+<table>
+	<tr>
+		<td> Livestock Name </td>
+		<td> Count </td>	
+		<td> Capacity </td>
+		<td> Stage </td>			
+	</tr>
+		
+<?php 
+	foreach($livestocks_dem as $livestock)
+	{
+		echo '<tr>
+			<td>'.$livestock -> livestock_name.'</td>
+			<td>'.$livestock -> count. '</td>
+			<td>'.$livestock -> capacity. '</td>
+			<td>'.$livestock -> stage. '</td>
+		</tr>';			
+	}
+?>
+</table>
+			
 {% endhighlight %}
+
+From the above snippet called `Livestock.php`, in line 2, I used an include function which calls back the `CallHarvestAPI.php` 
+snippet. On line 7 we created a variable name called <b> $live_name </b> which defines `$_GET['livestock_name']`. The variable 
+'livestock_name' is in fact a field in livestock endpoint and is seen again in line 35 in our form. The aim is to 
+search for a livestock name to display a list with the fields in the table.					
