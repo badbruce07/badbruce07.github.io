@@ -116,3 +116,70 @@ Look at the table below: <br/>
 <br/><br/>
 As shown above the foreach() loop in line 41 takes care of each row that has details regarding the first name (take a look at 
 the URL locator and you will see `first_name=Clover`)
+<br/><br/><br/>
+
+<h3> <b> Going Through Farm Endpoint </b> </h3>
+You can check out the crops endpoint at: <a href="http://harvestdata.herokuapp.com/farms/"> HarvestAPI Farms </a> <br/>
+
+<h3> <b> Accessing The Farm Data Through a PHP Snippet </b> </h3>
+Now you can access the data with any platform of your choice, but for me I will be using PHP especially since from the previous page
+I created a connection to HarvestAPI utilizing both PHP and cURL called CallHarvestAPI.php. You can see a view of the snippet below:
+<br/><br/>
+
+{% highlight PHP %}
+<?php
+	include("CallHarvestAPI.php");
+
+	/*---------------------------------------------------------------------------------------*/
+	/*---------------------------------- Farm Details ---------------------------------------*/
+	/*---------------------------------------------------------------------------------------*/
+		
+	$parish = $_GET['parish'];
+		
+	// call farms resource to return string
+	$farms = CallAPI('GET', 'harvestdata.herokuapp.com/farms/', array('search'=> $parish, 'ordering'=> 'extension'));
+
+	//convert JSON string to PHP variable (object)
+	$farm_objects = json_decode($farms);
+
+	$num_farms = $farm_objects -> count;
+	$next_page_farm_url = $farm_objects -> next;
+
+	//getting the actual prices from results
+	$farms_dem = $farm_objects -> results;
+?>
+
+<form action="farms.php" method="get">
+	<fieldset>
+		<legend> Search By Parish: </legend>	
+		Parish Name: <input type="text" name = "parish"/> <input type="submit"/>		
+	</fieldset>
+</form>
+<br />
+<br />
+<table>
+	<tr>
+		<td> Farm Address </td>
+		<td> Farm ID </td>	
+		<td> Parish </td>
+		<td> District </td>
+		<td> Extension </td>
+	</tr>
+
+<?php
+foreach($farms_dem as $farm)
+{
+	echo '<tr>
+		<td>'.$farm -> farm_address.'</td>
+		<td>'.$farm -> farm_id. '</td>
+		<td>'.$farm -> parish. '</td>
+		<td>'.$farm -> district. '</td>
+		<td>'.$farm -> extension. '</td>
+	</tr>';	
+}
+?>
+</table>
+
+{% endhighlight %}
+
+From the above snippet called `Farms.php`, in line 9, we used an include function which calls back the `CallHarvestAPI.php` snippet.
