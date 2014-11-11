@@ -75,6 +75,7 @@ foreach($crops_dem as $crop)
 			</tr>';			
 }				
 ?>
+</table>
 {% endhighlight %}
 
 <br/><br/>
@@ -195,6 +196,7 @@ foreach($prices_dem as $price)
 			
 ?>
 </table>
+
 {% endhighlight %}
 
 From the above snippet called `Prices.php`, in line 2, we used an include function which calls back the `CallHarvestAPI.php` 
