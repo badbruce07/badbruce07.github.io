@@ -78,10 +78,10 @@ foreach($crops_dem as $crop)
 {% endhighlight %}
 
 <br/><br/>
-From the above snippet called `Crops.php`, in line 11, we used an include function which calls back the `CallHarvestAPI.php` snippet.
-On line 8 we created a variable name  called <b> $cropname </b> which defines `$_GET['crop_name']`. The variable `crop_name` is in 
-fact a field in crops endpoint and is seen again in line 27 in our form. The aim is to search for a crop name to display a 
-list with the fields in the table. <br/>
+From the above snippet called `Crops.php`, in line 11, we used an include function which calls back the `CallHarvestAPI.php` 
+snippet. On line 8 we created a variable name  called <b> $cropname </b> which defines `$_GET['crop_name']`. The variable 
+`crop_name` is in fact a field in crops endpoint and is seen again in line 27 in our form. The aim is to search for a crop name 
+to display a list with the fields in the table. <br/>
 In lines 11-12 a variable called $crops and it is equivalent to CallAPI function that has 3 parameters. 
 If you recall the CallAPI function that was in CallHarvestAPI.php the parameters include:
 <ul>
@@ -127,3 +127,74 @@ As shown above the foreach() loop in line 51 takes care of each row that has det
 
 <h3> <b> Going Through Prices Endpoint </b> </h3>
 You can check out the crops endpoint at: <a href="http://harvestdata.herokuapp.com/prices/"> HarvestAPI Prices </a> <br/>
+
+<h3> <b> Accessing The Prices Data Through a PHP Snippet </b> </h3>
+Now you can access the data with any platform of your choice, but for me I will be using PHP especially since
+rom the previous page I created a connection to HarvestAPI utilizing both PHP and cURL called CallHarvestAPI.php. 
+You can see a view of the snippet below: 
+<br/><br/>
+
+{% highlight PHP %}
+
+<?php
+		include("CallHarvestAPI.php");
+
+		/*---------------------------------------------------------------------------------------*/
+		/*-------------------------------- Livestock Details ------------------------------------*/
+		/*---------------------------------------------------------------------------------------*/
+		
+		$commodity = $_GET['commodity'];
+
+		// call price resource to return string
+		$prices = CallAPI('GET', 'harvestdata.herokuapp.com/prices/',
+					array('search'=> $commodity, 'ordering'=>'price'));
+					
+		//convert JSON string to PHP variable (object)
+		$price_objects = json_decode($prices);
+			
+		$num_prices = $price_objects -> count;
+		$next_page_price_url = $price_objects -> next;
+			
+		//getting the actual prices from results
+		$prices_dem = $price_objects -> results;
+		
+	?>
+	
+		<form action="prices.php" method="get">
+			<fieldset>
+				<legend> Search By Commodity Name </legend>
+				Commodity: <input type="text" name = "commodity"/> <input type="submit"/>		
+			</fieldset>
+		</form>
+		<br />
+		<br />
+		<table>
+			<tr>
+				<td> Price </td>
+				<td> Commodity </td>	
+				<td> Parish </td>
+				<td> Batch Date </td>
+				<td> Published On </td>
+			</tr>
+			
+			<?php 
+			
+			foreach($prices_dem as $price)
+			{	
+				echo '<tr>
+					<td>'.$price -> price.'</td>
+					<td>'.$price -> commodity. '</td>
+					<td>'.$price -> parish. '</td>
+					<td>'.$price -> batch_date. '</td>
+					<td>'.$price -> published_on. '</td>
+				</tr>';
+			}
+			
+			/*---------------------------/////////////////////////////--------------------------------*/
+			/*------------------------------- End of Price Details -----------------------------------*/
+			/*--------------------------//////////////////////////////--------------------------------*/			
+			
+			?>
+		</table>
+
+{% endhighlight %}

@@ -78,10 +78,10 @@ foreach($crops_dem as $crop)
 {% endhighlight %}
 
 <br/><br/>
-From the above snippet called `Crops.php`, in line 11, we used an include function which calls back the `CallHarvestAPI.php` snippet.
-On line 8 we created a variable name  called <b> $cropname </b> which defines `$_GET['crop_name']`. The variable `crop_name` is in 
-fact a field in crops endpoint and is seen again in line 27 in our form. The aim is to search for a crop name to display a 
-list with the fields in the table. <br/>
+From the above snippet called `Crops.php`, in line 11, we used an include function which calls back the `CallHarvestAPI.php` 
+snippet. On line 8 we created a variable name  called <b> $cropname </b> which defines `$_GET['crop_name']`. The variable 
+`crop_name` is in fact a field in crops endpoint and is seen again in line 27 in our form. The aim is to search for a crop name 
+to display a list with the fields in the table. <br/>
 In lines 11-12 a variable called $crops and it is equivalent to CallAPI function that has 3 parameters. 
 If you recall the CallAPI function that was in CallHarvestAPI.php the parameters include:
 <ul>
@@ -120,3 +120,15 @@ Look at the table below: <br/>
 						
 As shown above the foreach() loop in line 51 takes care of each row that has details regarding the crop name 
 (take a look at the URL locator and you will see `crop_name=Potato`)
+<br/><br/><br/>
+
+<h2> <b> Navigating Through Prices Using HarvestAPI </b> </h2> 
+<br/>
+
+<h3> <b> Going Through Prices Endpoint </b> </h3>
+You can check out the crops endpoint at: <a href="http://harvestdata.herokuapp.com/prices/"> HarvestAPI Prices </a> <br/>
+
+<h3> <b> Accessing The Prices Data Through a PHP Snippet </b> </h3>
+Now you can access the data with any platform of your choice, but for me I will be using PHP especially since
+rom the previous page I created a connection to HarvestAPI utilizing both PHP and cURL called CallHarvestAPI.php. 
+You can see a view of the snippet below: 

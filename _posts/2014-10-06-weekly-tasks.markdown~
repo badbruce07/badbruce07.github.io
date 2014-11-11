@@ -21,4 +21,8 @@ and then restart the server using the command: <br/><br/>
 sudo service apache2 restart
 {% endhighlight %} 
 <br/><br/>
+
+![My helpful screenshot]({{ site.url }}/assets/first_install2.png)
+
+<br/><br/>
  I also navigate through the various endpoints of HarvestAPI.
