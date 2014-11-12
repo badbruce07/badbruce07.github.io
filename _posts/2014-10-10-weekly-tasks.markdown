@@ -109,3 +109,4 @@ NB. For the $data variable, you can only search by livestock_name. Livestock End
 Tables are created so that the results can be seen there and we have a foreach() loop to print the fields of our choice.<br />
 Look at the table below: <br/>
 
+![My helpful screenshot]({{ site.url }}/assets/screenshot_livestock.png)

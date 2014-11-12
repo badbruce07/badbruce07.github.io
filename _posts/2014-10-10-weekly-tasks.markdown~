@@ -105,3 +105,7 @@ NB. For the $data variable, you can only search by livestock_name. Livestock End
 		'livestock_name', which is the value we are trying to get to print the rest of details of our choice. 
 	</li>
 </ul>
+
+Tables are created so that the results can be seen there and we have a foreach() loop to print the fields of our choice.<br />
+Look at the table below: <br/>
+
