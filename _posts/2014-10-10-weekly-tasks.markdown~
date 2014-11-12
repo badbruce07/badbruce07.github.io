@@ -92,19 +92,16 @@ NB. For the $data variable, you can only search by livestock_name. Livestock End
 
 <ul>
 	<li>
-		In line 22, json_decode is used to decode a JSON string and then it becomes a PHP variable <b id="term1"> $livestock_objects </b>.				  	
+		In line 14, json_decode is used to decode a JSON string and then it becomes a PHP variable <b> $livestock_objects </b>.				  	
 	</li>
-				  	
-				  	<li>
-						In line 24, <b id="term1"> $num_livestocks </b> keeps a count of the number of livestock.				  	
-				  	</li>
-				  	
-				  	<li>
-						In line 28, <b id="term1"> $livestocks_dem </b> gets the livestock from results.				  	
-				  	</li>
-				  	
-				  	<li>
-						In lines 32-36, a form was created and a navigation was done by Livestock Name. Of course the name must match 
-						'livestock_name', which is the value we are trying to get to print the rest of details of our choice. 
+	<li>
+		In line 16, <b> $num_livestocks </b> keeps a count of the number of livestock.				  	
+	</li>
+	<li>
+		In line 20, <b> $livestocks_dem </b> gets the livestock from results.				  	
+	</li>
+	<li>
+		In lines 23-28, a form was created and a navigation was done by Livestock Name. Of course the name must match 
+		'livestock_name', which is the value we are trying to get to print the rest of details of our choice. 
 	</li>
 </ul>
