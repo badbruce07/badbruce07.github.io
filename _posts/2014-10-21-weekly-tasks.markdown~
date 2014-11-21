@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Progress on HarvestAPI Main Page"
+date:   2014-10-21 11:31:00
+categories: jekyll update
+---
+
+On the day of Tuesday October 21, 2014, I continued on the HarvestAPI main page where my task is to create an improved version of it. The tools that I have utilized is Jekyll with Pages and I found a template from last week called `agency-jekyll-theme-gh-pages` on the URL link called <a>http://jekyllthemes.org/</a>. Using my knowledge in CSS as well as utilizing BootstrapCSS, I was able to arrange the icons as it was in the original layout but only this time with the tabs. When the tabs are clicked, it will direct me to its content information. I had to look into the CSS content from bootstrap.css as well as making other modifications with font size and images.
