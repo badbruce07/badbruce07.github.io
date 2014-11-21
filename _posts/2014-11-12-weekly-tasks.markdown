@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HarvestAPI for Mobile and Tablet and Introduction to Global Census"
-date:   2014-11-11 11:31:00
+date:   2014-11-12 11:31:00
 categories: jekyll update
 ---
 
