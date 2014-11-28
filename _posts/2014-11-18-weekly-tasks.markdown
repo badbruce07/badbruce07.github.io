@@ -13,8 +13,6 @@ provided online through entering a bus number in the search box near the end of 
 another page showing a table below:
 <br/>
 
-<fieldset>
-	<legend> Results </legend>
 <table style="max-width:100%; ">
 	<th>
 		<td> Route </td>
@@ -30,7 +28,7 @@ another page showing a table below:
 	</tr>
 
 </table>
-</fieldset> 
+<br/><br/>
 are all up to date.
 <br/>
 <br/>

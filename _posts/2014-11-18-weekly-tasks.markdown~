@@ -15,7 +15,7 @@ another page showing a table below:
 
 <fieldset>
 	<legend> Results </legend>
-<table>
+<table style="max-width:100%; ">
 	<th>
 		<td> Route </td>
 		<td> Start </td>
