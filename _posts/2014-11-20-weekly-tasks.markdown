@@ -35,3 +35,5 @@ pictures on my Blu Life Play Phone and they look like these below:
 <br/><br/>
 ![My helpful screenshot]({{ site.url }}/assets/blu11.png)
 <br/><br/>
+
+The website can be viewed at <a> http://badbruce07.github.io/harvest-demo2/ </a>
