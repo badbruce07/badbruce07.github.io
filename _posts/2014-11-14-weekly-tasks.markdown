@@ -6,7 +6,20 @@ categories: jekyll update
 ---
 
 On Friday November 14,2014 I was working on HarvestAPI main page and I also started working on Global Census which was assigned to me
-by Matthew McNaughton.
+by Matthew McNaughton. There are 10 datasets that are being observed and surveyed on. They are:
+<ol>
+<li> Transport Timetables </li>
+<li> Government Budget </li>
+<li> Government Spending </li>
+<li> Election Results </li>
+<li> Company Register </li>
+<li> National Map </li>
+<li> National Statistics </li>
+<li> Legislation </li>
+<li> Postcodes/Zipcodes </li>
+<li> Pollutant Emissions </li>
+</ol>
+<br/>
 
 The questions based on Global Census were based on each dataset. They are:
 <br/>
