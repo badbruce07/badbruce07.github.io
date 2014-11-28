@@ -33,4 +33,9 @@ When each link is clicked, a PDF information is displayed, which then indicates 
  departments providing information within the ministry of justice.
  <br/>
  <br/>
- National Map dataset 
+ National Map dataset provides a map shown in the website <a> http://www.nla.gov.jm/map.asp </a>. However, grabbing the picture
+ data was most difficult to retrieve.
+ <br/>
+ <br/>
+ Pollutant Emissions Dataset provided details online regarding the various pollutant products through industraial and 
+ non-industrial resources and incineration resources. No PDF or CSV information was found available online.
