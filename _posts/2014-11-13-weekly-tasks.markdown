@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "HarvestAPI for Mobile and Tablet"
+date:   2014-11-13 11:31:00
+categories: jekyll update
+---
+
+On Thursday November 13, 2014 I continued working on HarvestAPI. I change the name of the tabs in Agency jekyll theme page to our 
+own:
+<ul>
+<li> Who </li>
+<li> Why </li>
+<li> For </li>
+<li> Contribute </li>
+<li> Collaborators </li>
+</ul>
+
+I have also modified the images that are shown originally as one combined set of images put together to separate layers which were 
+given to me by Matthew McNaughton.
+
+![My helpful screenshot]({{ site.url }}/assets/c4c_logo.png)
+<br/><br/>
+![My helpful screenshot]({{ site.url }}/assets/COI-logo.png)
+<br/><br/>
+![My helpful screenshot]({{ site.url }}/assets/Final_Logos-Long_Form_Logo.png)
+<br/><br/>
+![My helpful screenshot]({{ site.url }}/assets/idrc.png)
+<br/><br/>
+![My helpful screenshot]({{ site.url }}/assets/MSBMLogo_Final_long.png)
+<br/><br/>
+![My helpful screenshot]({{ site.url }}/assets/rada2.png)
+<br/><br/>
+
+I used gimp editor to modify the sizes for each of the png files.

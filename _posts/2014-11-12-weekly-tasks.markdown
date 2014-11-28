@@ -6,7 +6,10 @@ categories: jekyll update
 ---
 
 On November 12, 2014 I continued on HarvestAPI main page and determined the width size of the background image to be 1900x1250 pixels. 
-I used gimp editor to make the adjustments for the top of the page. I did some pages for the menus to have a green colour instead of
+I used gimp editor to make the adjustments for the top of the page. 
+Upon realizing that the background image had some serious complications when seen on mobile view, I 
+had to made a full screen resolution just as the original agency jekyll template had.
+I did some pages for the menus to have a green colour instead of
 white since it is too bright for the top of the page's background. <br/>
 
 {% highlight css %} 
