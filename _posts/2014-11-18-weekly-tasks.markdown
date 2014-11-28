@@ -13,7 +13,8 @@ provided online through entering a bus number in the search box near the end of 
 another page showing a table below:
 <br/>
 
-
+<fieldset>
+	<legend> Results </legend>
 <table>
 	<th>
 		<td> Route </td>
@@ -28,7 +29,8 @@ another page showing a table below:
 		<td> <a href="http://jutc.com/timetables/Schedule_72.pdf"> Schedule August Twn. to Half Way Tree  </a> </td>
 	</tr>
 
-</table> 
+</table>
+</fieldset> 
 are all up to date.
 <br/>
 <br/>
