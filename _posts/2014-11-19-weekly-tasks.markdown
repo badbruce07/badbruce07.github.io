@@ -12,4 +12,4 @@ using Gimp Editor I managed to make a new background that looks like this:
 <br/><br/>
 The background image is faded and the farmer image is placed in a div content in the center of the page.
 <br/> 
-![My helpful screenshot]({{ site.url }}/assets/new_bg.jpg)
+![My helpful screenshot]({{ site.url }}/assets/new_bg.png)
