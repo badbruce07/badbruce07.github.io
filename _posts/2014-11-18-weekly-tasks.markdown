@@ -8,7 +8,7 @@ categories: jekyll update
 On November 18, 2014 I continued working on Global Census for datasets in Jamaica. I filled out datasets information for 
 Transportation Tables and National Statistics. 
 
-The Transportable Tables dataset provided valid information over the website <a> http://jutc.com/timetables.php </a>, where data is 
+The Transportable Tables dataset provides valid information over the website <a> http://jutc.com/timetables.php </a>, where data is 
 provided online through entering a bus number in the search box near the end of the page. For example, entering 72 would lead you to
 another page showing a table below:
 <br/>
@@ -18,7 +18,15 @@ another page showing a table below:
 |  72   |  August Town  | Half-Way-Tree |<a href="http://jutc.com/timetables/Schedule_72.pdf"> Schedule August Twn. to Half Way Tree</a>|
 | 72EX  |  August Town  | Half-Way-Tree |<a href="http://jutc.com/timetables/NoSchedule.pdf"> Schedule August Twn. to Half Way Tree</a> |
 |---------------------------------------------------------------------------------------------------------------------------------------|
-<br/><br/>
-are all up to date.
+
+<br/>
+
+When each link is clicked, a PDF information is displayed, which then indicates the data is publicly available.
 <br/>
 <br/>
+ The National Statistics dataset provides information over the website <a> http://statinja.gov.jm/default.aspx </a> where each 
+ statistics from Economic, Labour Market & Earnings, Demographic and Social Statistics, Censuses, Environment and National 
+ Statistics System all provide data in PDF form.
+ <br/>
+ <br/>
+ 
