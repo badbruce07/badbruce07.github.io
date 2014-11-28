@@ -14,17 +14,17 @@ another page showing a table below:
 <br/>
 
 <table style="border:1px solid blue;">
-	<th>
-		<td> Route </td>
-		<td> Start </td>
-		<td> Destination </td>
-		<td> Schedule </td>
+	<th style="border:1px solid blue;>
+		<td style="border:1px solid blue;> Route </td>
+		<td style="border:1px solid blue;> Start </td>
+		<td style="border:1px solid blue;> Destination </td>
+		<td style="border:1px solid blue;> Schedule </td>
 	</th>
-	<tr>
-		<td> 72 </td>
-		<td> August Town </td>
-		<td> 	Half-Way-Tree </td>
-		<td> <a href="http://jutc.com/timetables/Schedule_72.pdf"> Schedule August Twn. to Half Way Tree  </a> </td>
+	<tr style="border:1px solid blue;>
+		<td style="border:1px solid blue;> 72 </td>
+		<td style="border:1px solid blue;> August Town </td>
+		<td style="border:1px solid blue;> 	Half-Way-Tree </td>
+		<td style="border:1px solid blue;> <a href="http://jutc.com/timetables/Schedule_72.pdf"> Schedule August Twn. to Half Way Tree  </a> </td>
 	</tr>
 
 </table> 

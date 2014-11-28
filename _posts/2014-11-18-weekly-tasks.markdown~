@@ -20,6 +20,12 @@ another page showing a table below:
 		<td> Destination </td>
 		<td> Schedule </td>
 	</th>
+	<tr>
+		<td> 72 </td>
+		<td> August Town </td>
+		<td> 	Half-Way-Tree </td>
+		<td> <a href="http://jutc.com/timetables/Schedule_72.pdf"> Schedule August Twn. to Half Way Tree  </a> </td>
+	</tr>
 
 </table> 
 are all up to date.
