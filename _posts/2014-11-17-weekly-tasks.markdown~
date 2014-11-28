@@ -16,6 +16,7 @@ Election Results dataset provided information based on all forms of elections. G
 the information is up to date. 
 <br/>
 Postcodes/Zipcodes dataset had information through the website <a> http://postalcodedb.com/AlphabeticSearch.aspx?country=Jamaica </a>
-where a postal search is conducted by clicking any alphabet. 
+where a postal search is conducted by clicking any alphabet. The cities would then show a postal code and when it is clicked, a 
+map of Jamaica is shown and zooming in shows the city name that was selected.
 <br/>
 I also was part of Staff Meeting where we discussed about our tasks and progress from last week and tasks that are following ahead. 
