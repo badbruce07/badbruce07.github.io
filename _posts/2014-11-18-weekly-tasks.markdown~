@@ -14,7 +14,7 @@ another page showing a table below:
 <br/>
 
 <table style="max-width:100%; ">
-	<th>
+	<th style="text-align:right;">
 		<td> Route </td>
 		<td> Start </td>
 		<td> Destination </td>
