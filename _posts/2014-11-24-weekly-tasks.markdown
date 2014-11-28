@@ -25,5 +25,6 @@ Looking at the `views.py` file, there are various functions consisting of:
 	<li> register (which is restricted to `@api_view(['POST'])`) </li>
 </ul>
 <br/><br/>
-I was required to write a `forms.py` file which control each of the fields in the signup tab, made another register function 
+After several researching in modifying the fields in the `register_form.html` file in the `templates` folder, I was required to 
+write a `forms.py` file which control each of the fields in the signup tab, made another register function 
 in views.py which is grabbing information from the forms.py file and add the register function to the `urls.py` file.
