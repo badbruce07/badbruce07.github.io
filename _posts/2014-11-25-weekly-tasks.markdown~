@@ -42,4 +42,5 @@ class RegistrationForm(forms.Form):
         model = User
         fields = ["username", "email", "password1", "password2"]
 
+
 {% endhighlight %}
