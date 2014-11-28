@@ -10,7 +10,7 @@ my first meeting alongside Slashroots with another external company so it was a 
 shown to RADA and they were pleased with the appearance of the UI.
 <br/>
 I got a new task by Varun Baker to now merge the HarvestAPI demo to the actual git repository integrating it with Django-1.5. I 
-created a new git branch called update_registration. It was done by writing in the command:
+created a new git branch called update_registration. It was done by writing the command in the terminal:
 <br/>
 {% highlight ruby %}
 git checkout -b update_registration
