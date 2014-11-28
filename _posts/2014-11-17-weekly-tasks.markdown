@@ -11,28 +11,37 @@ Election Results (Electoral Commissions of Jamaica).
 The questions based on Global Census were based on each dataset. They are:
 <br/>
 <ol>
- <li>Does the data exist? <br/>
+<li>
+ <b> Does the data exist? </b> <br/>
 (We are looking for government data from an official resource either issued directly by the government or by a third party representing the government.)
 </li>
-</ol>
-Is it in digital form?
+<li>
+<b> Is it in digital form? </b> <br/>
 (Can the data be accessed from a computer or is it in the old paper form? If you can find it online, then it’s digital, even if it is just a scan of the paper the dataset is on.)
-
-Publicly available?
+</li>
+<li>
+<b> Publicly available? </b> <br/>
 (This means the data can be accessed by the public and it is not restricted. Click “Show more” to show the conditions for publicly open.) If yes, then information should be entered below for:
-
-Data Publisher
+</li>
+<ul>
+<li>
+<b> Data Publisher </b> <br/>
 	If known, please enter the department/organisation responsible for publishing this  
 dataset along with contact email (if known). If the specific person responsible for this is 
 known please also list them.
-
-Title and short description
+</li>
+<li>
+<b> Title and short description </b> <br/>
 	Please enter the title(s) and excerpted short description(s) of the dataset(s) as  
 provided by the publisher. Description should be kept to a few sentences (max 1 paragraph)
+</li>
+</ul>
 
-Is the data available for free? 
+<li>
+<b> Is the data available for free? </b> <br/>
 (If you have to pay for it – it is not free.)
-
+</li>
+</ol>
 Is the data available online?
 (if it’s on the Internet and you can access it, it’s online. Notice that if the government emailed you the dataset but didn’t upload it to any webpage, it is not to be considered available online.) If the data is available online then it will ask for:
 
