@@ -41,31 +41,49 @@ provided by the publisher. Description should be kept to a few sentences (max 1 
 <b> Is the data available for free? </b> <br/>
 (If you have to pay for it – it is not free.)
 </li>
-</ol>
-Is the data available online?
-(if it’s on the Internet and you can access it, it’s online. Notice that if the government emailed you the dataset but didn’t upload it to any webpage, it is not to be considered available online.) If the data is available online then it will ask for:
-
-URL of data online
+<li>
+<b>Is the data available online? </b> <br/>
+(if it’s on the Internet and you can access it, it’s online. Notice that if the government emailed you the dataset but didn’t
+ upload it to any webpage, it is not to be considered available online.) If the data is available online then it will ask for:
+</li>
+<ul>
+<li>
+<b>URL of data online </b> <br/>
 	(The link to the specific dataset if that is possible. Otherwise to the home page for the 
  	data. If that is not impossible, then the link to main page of site on which the data is 
 located. Only links to official sites are eligeble, not third party sites. When it is 
 necessary for submitters to provide third party links, then they are put in the comments 
 section.)
+</li>
+</ul>
 
-Is the data machine readable?
+<li>
+<b>Is the data machine readable? </b> <br/>
 (Files are digital, yes, but not all can be processed or parsed easily by a computer. In order to answer this question, you would need to look at the datasets file type.) If yes is selected, then you state the format of the data, whether it is PDF, CSV, Excel or HTML.
+</li>
 
-Available in bulk?
+<li>
+<b>Available in bulk? </b> <br/>
 (Data is available in bulk if the whole dataset can be downloaded easily. It is considered non-bulk if the citizens are limited to getting parts of the dataset through an online interface.)
+</li>
 
-Openly licensed?
+<li>
+<b> Openly licensed? </b> <br/>
 (This mean the data term and conditions follows The Open Definition, which stipulates that in order for data to be open, it needs to be free to use, reuse or to redistribute.) If yes:
-
-URL to license or terms of use
+</li>
+<ul>
+<li>
+<b>URL to license or terms of use </b> <br/>
 	Please provide the url to the license or terms of use governing access and use of this 
 data (if known). If there is more than one URL you would like to list, please just list the 
 primary one in this field and add further information in the comments box below.
+</li>
+</ul>
 
-Is the data provided on a timely and up to date basis?
+<li>
+<b>Is the data provided on a timely and up to date basis? </b> <br/>
 (This means if the data is relevant to the year/time it is suppose to represent)
+</li>
+</ol>
+<br/>
 I also was part of Staff Meeting where we discussed about our tasks and progress from last week and tasks that are following ahead. 
