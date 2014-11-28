@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 On November 18, 2014 I continued working on Global Census for datasets in Jamaica. I filled out datasets information for 
-Transportation Tables and National Statistics. 
+Transportation Tables, National Statistics, Legislation, National Map and Pollutant Emissions. 
 
 The Transportable Tables dataset provides valid information over the website <a> http://jutc.com/timetables.php </a>, where data is 
 provided online through entering a bus number in the search box near the end of the page. For example, entering 72 would lead you to
@@ -29,4 +29,13 @@ When each link is clicked, a PDF information is displayed, which then indicates 
  Statistics System all provide data in PDF form.
  <br/>
  <br/>
- 
+ Legislation dataset has information provided through the link <a> http://moj.gov.jm/laws </a> where there are several 
+ departments providing information within the ministry of justice.
+ <br/>
+ <br/>
+ National Map dataset provides a map shown in the website <a> http://www.nla.gov.jm/map.asp </a>. However, grabbing the picture
+ data was most difficult to retrieve.
+ <br/>
+ <br/>
+ Pollutant Emissions Dataset provided details online regarding the various pollutant products through industraial and 
+ non-industrial resources and incineration resources. No PDF or CSV information was found available online.
