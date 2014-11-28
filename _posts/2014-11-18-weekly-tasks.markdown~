@@ -14,13 +14,13 @@ another page showing a table below:
 <br/>
 
 <table style="max-width:100%; text-align:right; ">
-	<th style="text-align:right; max-width:100%">
+	<th style="text-align:right;">
 		<td> Route </td>
 		<td> Start </td>
 		<td> Destination </td>
 		<td> Schedule </td>
 	</th>
-	<tr>
+	<tr style="text-align:right;>
 		<td> 72 </td>
 		<td> August Town </td>
 		<td> 	Half-Way-Tree </td>

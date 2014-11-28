@@ -13,21 +13,11 @@ provided online through entering a bus number in the search box near the end of 
 another page showing a table below:
 <br/>
 
-<table style="max-width:100%; text-align:right; ">
-	<th style="text-align:right;">
-		<td> Route </td>
-		<td> Start </td>
-		<td> Destination </td>
-		<td> Schedule </td>
-	</th>
-	<tr style="text-align:right;>
-		<td> 72 </td>
-		<td> August Town </td>
-		<td> 	Half-Way-Tree </td>
-		<td> <a href="http://jutc.com/timetables/Schedule_72.pdf"> Schedule August Twn. to Half Way Tree  </a> </td>
-	</tr>
-
-</table>
+|---------------------------------------------------------------------------------------------------------------------------------------|
+| Route |    Start      |  Destination  |                   Schedule                                                                    |
+|  72   |  August Town  | Half-Way-Tree |<a href="http://jutc.com/timetables/Schedule_72.pdf"> Schedule August Twn. to Half Way Tree</a>|
+| 72EX  |  August Town  | Half-Way-Tree |<a href="http://jutc.com/timetables/NoSchedule.pdf"> Schedule August Twn. to Half Way Tree</a> |
+|---------------------------------------------------------------------------------------------------------------------------------------|
 <br/><br/>
 are all up to date.
 <br/>
