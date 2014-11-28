@@ -20,7 +20,7 @@ another page showing a table below:
 		<td> Destination </td>
 		<td> Schedule </td>
 	</th>
-	<tr>
+	<tr style="text-align:right;>
 		<td> 72 </td>
 		<td> August Town </td>
 		<td> 	Half-Way-Tree </td>

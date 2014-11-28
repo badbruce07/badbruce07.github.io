@@ -13,8 +13,8 @@ provided online through entering a bus number in the search box near the end of 
 another page showing a table below:
 <br/>
 
-<table style="max-width:100%; ">
-	<th style="text-align:right;">
+<table style="max-width:100%; text-align:right; ">
+	<th style="text-align:right; max-width:100%">
 		<td> Route </td>
 		<td> Start </td>
 		<td> Destination </td>
