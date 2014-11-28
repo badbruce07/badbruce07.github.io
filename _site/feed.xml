@@ -5,9 +5,58 @@
     <description></description>
     <link>https://badbruce07.github.io/</link>
     <atom:link href="https://badbruce07.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 28 Nov 2014 06:14:12 -0500</pubDate>
-    <lastBuildDate>Fri, 28 Nov 2014 06:14:12 -0500</lastBuildDate>
+    <pubDate>Fri, 28 Nov 2014 08:05:30 -0500</pubDate>
+    <lastBuildDate>Fri, 28 Nov 2014 08:05:30 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>HarvestAPI Revisited</title>
+        <description>
+</description>
+        <pubDate>Wed, 19 Nov 2014 06:31:00 -0500</pubDate>
+        <link>https://badbruce07.github.io/jekyll/update/2014/11/19/weekly-tasks.html</link>
+        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/11/19/weekly-tasks.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Global Census (Cont'd)</title>
+        <description>&lt;p&gt;On November 18, 2014 I continued working on Global Census for datasets in Jamaica. I filled out datasets information for Postcodes,
+Transportation Tables and National Statistics. &lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Nov 2014 06:31:00 -0500</pubDate>
+        <link>https://badbruce07.github.io/jekyll/update/2014/11/18/weekly-tasks.html</link>
+        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/11/18/weekly-tasks.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Global Census</title>
+        <description>&lt;p&gt;On November 17, 2014 I was working on Global Census where I needed to fill out information for the datasets Government Budget and 
+Election Results (Electoral Commissions of Jamaica). 
+&lt;br /&gt;
+I also was part of Staff Meeting where we discussed about our tasks and progress from last week and tasks that are following ahead. &lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Nov 2014 06:31:00 -0500</pubDate>
+        <link>https://badbruce07.github.io/jekyll/update/2014/11/17/weekly-tasks.html</link>
+        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/11/17/weekly-tasks.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>HarvestAPI for Mobile and Tablet and in depth With Global Census (Cont'd)</title>
@@ -834,56 +883,6 @@ Yesterday I had created CSS for &lt;code&gt;media min-width size 768px&lt;/code&
         <pubDate>Thu, 06 Nov 2014 06:31:00 -0500</pubDate>
         <link>https://badbruce07.github.io/jekyll/update/2014/11/06/weekly-tasks.html</link>
         <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/11/06/weekly-tasks.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Return To Office</title>
-        <description>&lt;p&gt;On November 5. 2014 I returned to the office after a week long of Chik V. I continued working on getting the mobile and tablet side of
-HarvestAPI to show well on screen. I got the menu to have a button appearance for each of the tabs at the header.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://badbruce07.github.io/assets/harvest_problem.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 05 Nov 2014 06:31:00 -0500</pubDate>
-        <link>https://badbruce07.github.io/jekyll/update/2014/11/05/weekly-tasks.html</link>
-        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/11/05/weekly-tasks.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Chikungunya Virus/Work from Home Pt 2</title>
-        <description>&lt;p&gt;On November 4, 2014, despite feeling a bit better from the virus I was advised to stayed home since yesterday for safety measures
-so I did some research on fixing the HarvestAPI page from home.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 04 Nov 2014 06:31:00 -0500</pubDate>
-        <link>https://badbruce07.github.io/jekyll/update/2014/11/04/weekly-tasks.html</link>
-        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/11/04/weekly-tasks.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Chikungunya Virus/Work From Home</title>
-        <description>&lt;p&gt;On November 3, 2014, despite feeling a bit better from the virus I was advised to stayed home for the next two days for safety measures
-so I did some research on fixing the HarvestAPI page from home.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 03 Nov 2014 06:31:00 -0500</pubDate>
-        <link>https://badbruce07.github.io/jekyll/update/2014/11/03/weekly-tasks.html</link>
-        <guid isPermaLink="true">https://badbruce07.github.io/jekyll/update/2014/11/03/weekly-tasks.html</guid>
         
         
         <category>jekyll</category>

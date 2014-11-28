@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "Global Census"
+date:   2014-11-17 11:31:00
+categories: jekyll update
+---
+
+On November 17, 2014 I was working on Global Census where I needed to fill out information for the datasets Government Budget and 
+Election Results (Electoral Commissions of Jamaica). 
+<br/>
+The questions based on Global Census were based on each dataset. They are:
+<br/>
+<ol>
+ <li>Does the data exist? <br/>
+(We are looking for government data from an official resource either issued directly by the government or by a third party representing the government.)
+</li>
+</ol>
+Is it in digital form?
+(Can the data be accessed from a computer or is it in the old paper form? If you can find it online, then it’s digital, even if it is just a scan of the paper the dataset is on.)
+
+Publicly available?
+(This means the data can be accessed by the public and it is not restricted. Click “Show more” to show the conditions for publicly open.) If yes, then information should be entered below for:
+
+Data Publisher
+	If known, please enter the department/organisation responsible for publishing this  
+dataset along with contact email (if known). If the specific person responsible for this is 
+known please also list them.
+
+Title and short description
+	Please enter the title(s) and excerpted short description(s) of the dataset(s) as  
+provided by the publisher. Description should be kept to a few sentences (max 1 paragraph)
+
+Is the data available for free? 
+(If you have to pay for it – it is not free.)
+
+Is the data available online?
+(if it’s on the Internet and you can access it, it’s online. Notice that if the government emailed you the dataset but didn’t upload it to any webpage, it is not to be considered available online.) If the data is available online then it will ask for:
+
+URL of data online
+	(The link to the specific dataset if that is possible. Otherwise to the home page for the 
+ 	data. If that is not impossible, then the link to main page of site on which the data is 
+located. Only links to official sites are eligeble, not third party sites. When it is 
+necessary for submitters to provide third party links, then they are put in the comments 
+section.)
+
+Is the data machine readable?
+(Files are digital, yes, but not all can be processed or parsed easily by a computer. In order to answer this question, you would need to look at the datasets file type.) If yes is selected, then you state the format of the data, whether it is PDF, CSV, Excel or HTML.
+
+Available in bulk?
+(Data is available in bulk if the whole dataset can be downloaded easily. It is considered non-bulk if the citizens are limited to getting parts of the dataset through an online interface.)
+
+Openly licensed?
+(This mean the data term and conditions follows The Open Definition, which stipulates that in order for data to be open, it needs to be free to use, reuse or to redistribute.) If yes:
+
+URL to license or terms of use
+	Please provide the url to the license or terms of use governing access and use of this 
+data (if known). If there is more than one URL you would like to list, please just list the 
+primary one in this field and add further information in the comments box below.
+
+Is the data provided on a timely and up to date basis?
+(This means if the data is relevant to the year/time it is suppose to represent)
+I also was part of Staff Meeting where we discussed about our tasks and progress from last week and tasks that are following ahead. 
